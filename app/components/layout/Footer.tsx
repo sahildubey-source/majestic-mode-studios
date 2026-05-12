@@ -55,16 +55,11 @@ export default function Footer() {
           {/* Brand column */}
           <div style={{ maxWidth: '320px' }}>
             <div style={{ marginBottom: '24px' }}>
-              <span style={{
-                fontFamily: "'Syne', sans-serif",
-                fontWeight: 800,
-                fontSize: '22px',
-                color: 'var(--text-primary)',
-                letterSpacing: '-0.02em',
-                textTransform: 'uppercase',
-              }}>
-                Majestic Mode
-              </span>
+              <img 
+                src="/logo.png" 
+                alt="Majestic Mode Studios" 
+                style={{ height: '56px', width: 'auto' }}
+              />
             </div>
             <p style={{ fontSize: '15px', lineHeight: 1.6, marginBottom: '32px', color: 'var(--text-secondary)' }}>
               We build high-performance creative intelligence systems for brands that demand category dominance.
@@ -199,7 +194,7 @@ export default function Footer() {
           </p>
           <div style={{ display: 'flex', gap: '24px' }}>
              <p style={{ fontSize: '14px', color: 'var(--text-tertiary)' }}>
-              Built with ✦ in the USA
+              Built with ✦ for Global Impact
             </p>
           </div>
         </div>
