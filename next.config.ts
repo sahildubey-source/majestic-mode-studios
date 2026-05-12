@@ -17,10 +17,10 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: 'host',
-            value: 'www.majesticmodestudios.com',
+            value: 'majesticmodestudios.com',
           },
         ],
-        destination: 'https://majesticmodestudios.com/:path*',
+        destination: 'https://www.majesticmodestudios.com/:path*',
         permanent: true,
       },
     ];

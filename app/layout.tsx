@@ -6,7 +6,7 @@ import StickyCTA from "./components/layout/StickyCTA";
 import CustomCursor from "./components/layout/CustomCursor";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://majesticmodestudios.com'),
+  metadataBase: new URL('https://www.majesticmodestudios.com'),
   title: {
     default: "Majestic Mode Studios | AI-Powered Creative & Growth Studio",
     template: "%s | Majestic Mode Studios",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://majesticmodestudios.com",
+    url: "https://www.majesticmodestudios.com",
     siteName: "Majestic Mode Studios",
     title: "Majestic Mode Studios | AI-Powered Creative & Growth Studio",
     description: "We build full-stack growth systems — AI video ads, paid media, SEO, and automation — for brands ready to scale past the noise globally.",
