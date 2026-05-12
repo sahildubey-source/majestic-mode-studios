@@ -8,23 +8,23 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     q: 'How much does it cost to work with Majestic Mode Studios?',
-    a: "Our pricing varies based on scope and services. Most clients invest between $2,500–$10,000/month depending on the growth system required. We offer a free strategy call to scope your project before any commitment. No surprise fees — ever.",
+    a: "We provide bespoke solutions tailored to each brand's unique growth stage and objectives. Most of our partner engagements range from $2,500 to over $10,000 per month. During our initial strategy audit, we'll map out a specific scope and investment level that aligns with your desired ROI—with zero hidden costs.",
   },
   {
-    q: 'How long until we see results?',
-    a: "Most clients see measurable movement within the first 30 days — whether that's improved conversion rates, ad performance, or early ranking signals. Compounding results typically emerge by month 3. We set realistic expectations upfront and track every KPI.",
+    q: 'How long until we see measurable results?',
+    a: "While every brand is different, we typically see positive shifts in conversion metrics and ad efficiency within the first 30 days. Our systems are designed for compounding growth; most clients experience significant scaling and brand dominance by month 3 and beyond.",
   },
   {
     q: 'Do you require long-term contracts?',
-    a: "No. We operate on monthly agreements with 30-day notice to cancel. We believe results should earn retention — not contracts. That said, growth systems compound over time, so most clients stay 12+ months.",
+    a: "No. We believe our results should be the reason you stay, not a legal document. We operate on flexible monthly agreements with a simple 30-day notice. We focus on building long-term partnerships—many of our clients have been with us for over a year because we consistently hit their targets.",
   },
   {
-    q: 'What industries do you work with?',
-    a: "We work with eCommerce brands, SaaS companies, local service businesses, real estate firms, health & wellness, and professional services. If you serve USA customers and want to grow, we can build your system.",
+    q: 'What industries and regions do you work with?',
+    a: "We partner with high-growth eCommerce brands, SaaS companies, and digital-first service providers globally. Our expertise spans across North America, Europe, Asia, and beyond. If you have a scalable offer and the ambition to dominate your category, we can build the infrastructure to get you there.",
   },
   {
-    q: "What makes you different from other agencies?",
-    a: "Three things: AI integration in everything we do (not as a buzzword, but as actual workflow), obsessive performance tracking with full transparency, and a systems mindset — we build infrastructure, not just campaigns.",
+    q: "What makes Majestic Mode different from other agencies?",
+    a: "We move beyond traditional 'management' into 'Creative Intelligence.' By integrating advanced AI workflows with obsessive performance tracking, we build full-stack growth infrastructure—not just ad campaigns. We don't just report on data; we engineer outcomes.",
   },
 ];
 

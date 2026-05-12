@@ -11,8 +11,8 @@ import FAQ from './components/sections/FAQ';
 import FinalCTA from './components/sections/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'AI Marketing Agency USA | Majestic Mode Studios',
-  description: 'Majestic Mode Studios builds full-stack growth systems for ambitious USA brands — AI video ads, paid media, SEO, and automation that compound results. Book your free strategy call today.',
+  title: 'AI-Powered Creative & Growth Studio | Majestic Mode Studios',
+  description: 'Majestic Mode Studios builds full-stack growth systems for ambitious global brands — AI video ads, paid media, SEO, and automation that compound results. Book your free strategy audit today.',
   alternates: {
     canonical: 'https://majesticmodestudios.com',
   },

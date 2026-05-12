@@ -106,7 +106,7 @@ export default function Hero() {
             </div>
             <div>
               <p style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '4px' }}>
-                Trusted by <span style={{ color: 'var(--text-primary)' }}>40+ USA Brands</span>
+                Trusted by <span style={{ color: 'var(--text-primary)' }}>40+ Global Brands</span>
               </p>
               <div style={{ display: 'flex', gap: '2px' }}>
                 {[1, 2, 3, 4, 5].map(star => (
