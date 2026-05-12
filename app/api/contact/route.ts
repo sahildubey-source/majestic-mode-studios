@@ -6,7 +6,14 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, company, budget, challenge } = body;
+    const { name, email, company, budget, challenge, fax } = body;
+
+    // ── Honeypot Check ──────────────────────────────────────────
+    if (fax) {
+      console.log('Honeypot triggered! Bot detected. Ignoring request.');
+      // Return fake success so the bot thinks it worked
+      return NextResponse.json({ success: true });
+    }
 
     console.log('--- Incoming Contact Form ---');
     console.log('Body:', body);

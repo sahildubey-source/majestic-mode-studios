@@ -12,6 +12,7 @@ export default function FinalCTA() {
     company: '',
     budget: '',
     challenge: '',
+    fax: '',
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading]   = useState(false);
@@ -123,6 +124,18 @@ export default function FinalCTA() {
               </p>
 
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                {/* Honeypot field - hidden from users, visible to bots */}
+                <div style={{ position: 'absolute', opacity: 0, zIndex: -1, pointerEvents: 'none', height: 0, width: 0, overflow: 'hidden' }}>
+                  <input
+                    type="text"
+                    name="fax"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={formData.fax}
+                    onChange={e => setFormData(prev => ({ ...prev, fax: e.target.value }))}
+                  />
+                </div>
+
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>
                   {[
                     { id: 'name',    label: 'Your Name',    type: 'text',  placeholder: 'John Smith',          key: 'name'    },
