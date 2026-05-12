@@ -1,9 +1,26 @@
 'use client';
 
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Script from 'next/script';
 
 export default function FinalCTA() {
+  useEffect(() => {
+    // This ensures Calendly re-initializes on client-side navigation
+    const initCalendly = () => {
+      if ((window as any).Calendly) {
+        (window as any).Calendly.initInlineWidget({
+          url: 'https://calendly.com/majesticmode',
+          parentElement: document.getElementById('calendly-widget'),
+        });
+      }
+    };
+
+    // Small delay to ensure the DOM element is ready
+    const timer = setTimeout(initCalendly, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="section-pad" style={{
       position: 'relative',
@@ -83,6 +100,14 @@ export default function FinalCTA() {
           <Script
             src="https://assets.calendly.com/assets/external/widget.js"
             strategy="afterInteractive"
+            onLoad={() => {
+              if ((window as any).Calendly) {
+                (window as any).Calendly.initInlineWidget({
+                  url: 'https://calendly.com/majesticmode',
+                  parentElement: document.getElementById('calendly-widget'),
+                });
+              }
+            }}
           />
         </motion.div>
 
