@@ -75,13 +75,14 @@ export default function FinalCTA() {
           }}
         >
           <div
+            id="calendly-widget"
             className="calendly-inline-widget"
             data-url="https://calendly.com/majesticmode"
             style={{ minWidth: '320px', height: '700px' }}
           />
           <Script
             src="https://assets.calendly.com/assets/external/widget.js"
-            strategy="lazyOnload"
+            strategy="afterInteractive"
           />
         </motion.div>
 
