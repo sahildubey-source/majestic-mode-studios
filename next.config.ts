@@ -10,6 +10,21 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizeCss: false,
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.majesticmodestudios.com',
+          },
+        ],
+        destination: 'https://majesticmodestudios.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

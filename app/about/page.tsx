@@ -9,7 +9,7 @@ const values = [
   { icon: '📊', title: 'Metrics-Obsessed', description: 'We track what matters: revenue, ROAS, CPL, conversions. Not vanity.' },
   { icon: '🤝', title: 'True Partnership', description: 'We treat your budget like it\'s our own money on the line. Always.' },
   { icon: '🔄', title: 'Always Optimizing', description: 'Campaigns, content, and copy get better every single week. Relentlessly.' },
-  { icon: '🇺🇸', title: 'USA-Focused', description: 'We understand the US market, consumer, and competitive landscape.' },
+  { icon: '🌐', title: 'Global Strategy', description: 'We understand international markets, diverse consumers, and the global competitive landscape.' },
 ];
 
 
