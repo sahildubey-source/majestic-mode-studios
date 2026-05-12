@@ -4,6 +4,7 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import StickyCTA from "./components/layout/StickyCTA";
 import CustomCursor from "./components/layout/CustomCursor";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.majesticmodestudios.com'),
@@ -72,6 +73,19 @@ export default function RootLayout({
         <meta name="theme-color" content="#FBFBFE" />
       </head>
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-H70LSY9CS5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-H70LSY9CS5');
+          `}
+        </Script>
         <a
           href="#main-content"
           className="skip-link"
