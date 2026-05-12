@@ -6,32 +6,32 @@ import { motion } from 'framer-motion';
 
 const cases = [
   {
-    tag: 'eCommerce / DTC',
-    client: 'Nova Brands Co.',
-    metric: '3.8x',
+    tag: 'D2C Fashion',
+    client: 'Veloura Fashion',
+    metric: '17.8x',
     metricLabel: 'ROAS',
-    description: 'Scaled from $8k/mo to $60k/mo ad spend in 90 days with AI-optimized creative testing and full-funnel paid media strategy.',
+    description: 'Scaled a women’s fashion brand using high-converting Meta ad creatives, audience testing, and funnel optimization.',
   },
   {
-    tag: 'SaaS / B2B',
-    client: 'Stellar Analytics',
-    metric: '247%',
-    metricLabel: 'Traffic Growth',
-    description: 'Implemented technical SEO overhaul + AI content engine. Ranked 14 target keywords on page 1 within 5 months.',
+    tag: 'Luxury Jewellery',
+    client: 'Aurelia Jewels',
+    metric: '8.23x',
+    metricLabel: 'ROAS',
+    description: 'Boosted revenue through festive campaign creatives, precision retargeting, and conversion-focused ad funnels.',
   },
   {
-    tag: 'Local Service',
-    client: 'Apex Medical Group',
-    metric: '4.2x',
-    metricLabel: 'Lead Volume',
-    description: 'Rebuilt Google Ads structure and launched location-specific landing pages. Reduced cost-per-lead by 62%.',
+    tag: 'Wellness / Spirituality',
+    client: 'Enlightened Circle',
+    metric: '2,800+',
+    metricLabel: 'Leads Generated',
+    description: 'Executed large-scale lead generation campaigns with optimized targeting and low CPL acquisition.',
   },
   {
-    tag: 'Real Estate',
-    client: 'Crest Properties',
-    metric: '91%',
-    metricLabel: 'Conversion Lift',
-    description: 'Redesigned the main site with conversion architecture. Monthly pipeline value increased from $200k to $1.2M.',
+    tag: 'Education',
+    client: 'ABGI Institute',
+    metric: '708K+',
+    metricLabel: 'Ad Clicks',
+    description: 'Managed high-volume student acquisition campaigns with optimized CPC and lead-focused Google advertising.',
   },
 ];
 
@@ -39,7 +39,7 @@ export default function CaseStudies() {
   return (
     <section className="section-pad" style={{ background: 'transparent' }}>
       <div className="container-main">
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '24px', marginBottom: '64px' }}>
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '24px', marginBottom: '32px' }}>
           <div>
             <span style={{ 
               color: 'var(--accent-primary)', 
@@ -112,22 +112,6 @@ export default function CaseStudies() {
               <p style={{ fontSize: '15px', lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: '32px', flex: 1 }}>
                 {c.description}
               </p>
-
-              <Link
-                href="/work"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '4px',
-                  fontSize: '14px',
-                  fontWeight: 700,
-                  color: 'var(--text-primary)',
-                  textDecoration: 'none',
-                  transition: 'color 0.2s',
-                }}
-              >
-                Case Study <ArrowUpRight size={16} />
-              </Link>
             </motion.div>
           ))}
         </div>

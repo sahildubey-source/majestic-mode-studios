@@ -38,7 +38,7 @@ export default function Testimonials() {
   return (
     <section className="section-pad" style={{ background: 'transparent' }}>
       <div className="container-main">
-        <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
           <span style={{ 
             color: 'var(--accent-primary)', 
             fontWeight: 700, 

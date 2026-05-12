@@ -12,12 +12,7 @@ const values = [
   { icon: '🇺🇸', title: 'USA-Focused', description: 'We understand the US market, consumer, and competitive landscape.' },
 ];
 
-const team = [
-  { name: 'Alex Torres', role: 'Founder & Creative Director', color: '#7B5CF0', bio: '8+ years building growth systems for DTC and SaaS brands. Former head of growth at a $40M eCommerce brand.' },
-  { name: 'Jamie Chen', role: 'Head of Paid Media', color: '#FF8A65', bio: 'Managed $2M+ in monthly ad spend. Google and Meta certified. Ex-agency media buyer turned in-house specialist.' },
-  { name: 'Morgan Ellis', role: 'AI Creative Lead', color: '#00D4FF', bio: 'Pioneering AI-assisted video production since 2022. Expert in Runway ML, Midjourney, and generative workflows.' },
-  { name: 'Riley Parker', role: 'SEO & Content Strategist', color: '#FFB800', bio: 'Built organic traffic engines generating 1M+ monthly visits. Technical SEO and AI-assisted content specialist.' },
-];
+
 
 export default function AboutPage() {
   return (
@@ -49,8 +44,8 @@ export default function AboutPage() {
             </p>
             <div style={{ display: 'flex', gap: '64px', flexWrap: 'wrap' }}>
               {[
-                { metric: '40+', label: 'Brands Served' },
-                { metric: '$12M+', label: 'Spend Managed' },
+                { metric: '12+', label: 'Projects Delivered' },
+                { metric: '$18K+', label: 'Spend Managed' },
                 { metric: '3.4x', label: 'Average ROAS' },
               ].map(stat => (
                 <div key={stat.label}>
@@ -99,48 +94,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="section-pad" style={{ background: 'transparent' }}>
-        <div className="container-main">
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <span style={{ 
-              color: 'var(--accent-primary)', 
-              fontWeight: 700, 
-              fontSize: '12px', 
-              textTransform: 'uppercase', 
-              letterSpacing: '0.1em',
-              display: 'block',
-              marginBottom: '16px'
-            }}>
-              The Minds
-            </span>
-            <h2 style={{ maxWidth: '600px', margin: '0 auto' }}>The Team Behind <span className="text-highlight">The Magic</span></h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
-            {team.map((member, i) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="card-white"
-              >
-                <div style={{
-                  width: '72px', height: '72px', borderRadius: '20px', background: member.color,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: '24px', fontWeight: 800, color: '#fff',
-                  marginBottom: '24px',
-                  boxShadow: '0 10px 20px rgba(0,0,0,0.1)',
-                }}>{member.name.split(' ').map(n => n[0]).join('')}</div>
-                <h3 style={{ fontSize: '22px', marginBottom: '6px' }}>{member.name}</h3>
-                <p style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.05em', color: 'var(--accent-primary)', textTransform: 'uppercase', marginBottom: '20px' }}>{member.role}</p>
-                <p style={{ fontSize: '15px', lineHeight: 1.7, color: 'var(--text-secondary)' }}>{member.bio}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Final CTA */}
       <section style={{ padding: '140px 0', background: 'transparent', textAlign: 'center' }}>
@@ -153,7 +107,7 @@ export default function AboutPage() {
             className="card-white"
             style={{ maxWidth: '800px', margin: '0 auto', padding: '80px 40px' }}
           >
-            <h2 style={{ maxWidth: '600px', margin: '0 auto 24px' }}>Want to Work With <span className="text-highlight">This Team?</span></h2>
+            <h2 style={{ maxWidth: '600px', margin: '0 auto 24px' }}>Ready to Scale <span className="text-highlight">Your Brand?</span></h2>
             <p style={{ maxWidth: '480px', margin: '0 auto 48px', fontSize: '18px', color: 'var(--text-secondary)' }}>
               Book your free strategy call and let&apos;s talk about your brand&apos;s goals. No pressure, no pitch — just an honest conversation.
             </p>

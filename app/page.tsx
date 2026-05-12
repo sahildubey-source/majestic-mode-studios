@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Hero from './components/sections/Hero';
-import LogoStrip from './components/sections/LogoStrip';
 import PainPoints from './components/sections/PainPoints';
 import Services from './components/sections/Services';
 import Process from './components/sections/Process';
@@ -23,7 +22,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <LogoStrip />
       <PainPoints />
       <Services />
       <Process />

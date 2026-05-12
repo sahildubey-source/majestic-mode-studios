@@ -15,25 +15,19 @@ const InstagramIcon = () => (
     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
   </svg>
 );
-const XIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-  </svg>
-);
-
 const footerLinks = {
   Services: [
-    { label: 'AI Video Ads',         href: '/services#ai-video'     },
-    { label: 'Paid Ads Management',  href: '/services#paid-ads'     },
-    { label: 'Social Media',         href: '/services#social-media' },
     { label: 'Website Development',  href: '/services#web-dev'      },
-    { label: 'SEO & Content',        href: '/services#seo'          },
+    { label: 'Paid Ads Management',  href: '/services#performance-marketing' },
+    { label: 'Social Media Management', href: '/services#social-media' },
+    { label: 'AI Content Creation',  href: '/services#ai-content'   },
+    { label: 'SEO & Organic Growth', href: '/services#seo-organic'  },
+    { label: 'Automation & AI',      href: '/services#automation-ai' },
   ],
   Company: [
     { label: 'About',         href: '/about'   },
     { label: 'Work',          href: '/work'    },
     { label: 'Blog',          href: '/blog'    },
-    { label: 'Pricing',       href: '/pricing' },
     { label: 'Contact',       href: '/contact' },
   ],
   Legal: [
@@ -79,7 +73,6 @@ export default function Footer() {
               {[
                 { Icon: LinkedInIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
                 { Icon: InstagramIcon, href: 'https://instagram.com', label: 'Instagram' },
-                { Icon: XIcon, href: 'https://x.com', label: 'X / Twitter' },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
@@ -165,12 +158,12 @@ export default function Footer() {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <a
-                href="mailto:hello@majesticmodestudios.com"
+                href="mailto:majesticmodee@gmail.com"
                 style={{ fontSize: '15px', color: 'var(--text-secondary)', textDecoration: 'none', fontWeight: 500 }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-primary)')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
               >
-                hello@majesticmodestudios.com
+                majesticmodee@gmail.com
               </a>
               <div style={{
                 display: 'inline-flex',

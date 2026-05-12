@@ -10,7 +10,6 @@ const navLinks = [
   { href: '/work',     label: 'Work'     },
   { href: '/about',    label: 'About'    },
   { href: '/blog',     label: 'Blog'     },
-  { href: '/pricing',  label: 'Pricing'  },
 ];
 
 export default function Navbar() {
@@ -40,10 +39,11 @@ export default function Navbar() {
           height: '80px',
           display: 'flex',
           alignItems: 'center',
-          background: scrolled ? 'rgba(255, 255, 255, 0.85)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(20px)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(0,0,0,0.05)' : '1px solid transparent',
-          boxShadow: scrolled ? '0 4px 30px rgba(0,0,0,0.03)' : 'none',
+          background: scrolled ? 'rgba(255, 255, 255, 0.5)' : 'transparent',
+          backdropFilter: scrolled ? 'blur(32px)' : 'none',
+          WebkitBackdropFilter: scrolled ? 'blur(32px)' : 'none',
+          borderBottom: scrolled ? '1px solid rgba(255, 255, 255, 0.4)' : '1px solid transparent',
+          boxShadow: scrolled ? '0 4px 30px rgba(0,0,0,0.05)' : 'none',
           transition: 'all 0.4s ease',
         }}
       >

@@ -82,9 +82,9 @@ export default function BlogPage() {
             }}>
               ✦ Insights
             </span>
-            <h1 style={{ maxWidth: '800px', margin: '0 auto 24px' }}>Marketing Intelligence <br/><span className="text-highlight">No Fluff</span></h1>
-            <p style={{ maxWidth: '520px', margin: '0 auto', fontSize: '18px', color: 'var(--text-secondary)' }}>
-              Data-driven insights on AI marketing, paid ads, SEO, and growth systems — straight from the minds of our strategists.
+            <h1 style={{ maxWidth: '800px', margin: '0 auto 24px' }}>Insights That <br/><span className="text-highlight">Drive Growth</span></h1>
+            <p style={{ maxWidth: '600px', margin: '0 auto', fontSize: '18px', color: 'var(--text-secondary)' }}>
+              Actionable thinking on performance marketing, creative systems, and digital growth.
             </p>
           </motion.div>
         </div>

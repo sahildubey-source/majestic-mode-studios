@@ -6,9 +6,8 @@ import { motion } from 'framer-motion';
 
 export default function MidCTA() {
   return (
-    <section style={{
+    <section className="section-pad" style={{
       position: 'relative',
-      padding: 'clamp(100px, 12vw, 160px) 0',
       background: 'transparent',
       overflow: 'hidden',
     }}>

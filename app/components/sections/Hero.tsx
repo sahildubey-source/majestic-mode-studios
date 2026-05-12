@@ -146,14 +146,14 @@ export default function Hero() {
             {/* SVG Line Graph Mock */}
             <svg width="100%" height="80" viewBox="0 0 100 30" preserveAspectRatio="none">
               <path
-                d="M0 25 Q 10 20, 20 22 T 40 15 T 60 18 T 80 5 T 100 10"
+                d="M0 25 Q 10 20, 20 22 T 40 15 T 60 18 T 80 12 T 100 14"
                 fill="none"
                 stroke="var(--accent-primary)"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
               <path
-                d="M0 25 Q 10 20, 20 22 T 40 15 T 60 18 T 80 5 T 100 10 L 100 30 L 0 30 Z"
+                d="M0 25 Q 10 20, 20 22 T 40 15 T 60 18 T 80 12 T 100 14 L 100 30 L 0 30 Z"
                 fill="url(#gradient-purple)"
                 opacity="0.1"
               />

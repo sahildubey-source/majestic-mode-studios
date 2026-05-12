@@ -6,40 +6,40 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    id: 'ai-video',
-    icon: '🎬',
-    title: 'AI Video Ads',
-    description: 'Scroll-stopping video creatives powered by generative AI. Produced 10× faster, tested and optimized for performance.',
+    id: 'web-dev',
+    icon: '💻',
+    title: 'AI-Powered Website Development',
+    description: 'High-performing websites and landing pages built in Next.js or Webflow. Optimized for conversion, speed, and long-term scalability.',
   },
   {
-    id: 'paid-ads',
+    id: 'performance-marketing',
     icon: '📈',
-    title: 'Paid Ads Management',
-    description: 'Meta, Google, TikTok — we engineer campaigns with full-funnel strategy, audience precision, and relentless optimization.',
+    title: 'Performance Marketing & Paid Ads',
+    description: 'Meta, Google, and TikTok ads engineered with data-first strategy, audience precision, and relentless ROI optimization.',
   },
   {
     id: 'social-media',
     icon: '📱',
-    title: 'Social Media Marketing',
-    description: 'Consistent, on-brand content systems that build authority and grow engaged audiences across every platform.',
+    title: 'Social Media Management',
+    description: 'Consistent, on-brand content systems that build authority and grow engaged audiences across Instagram, LinkedIn, and more.',
   },
   {
-    id: 'web-dev',
-    icon: '💻',
-    title: 'Website Development',
-    description: 'High-converting, blazing-fast websites and landing pages built in Next.js or Webflow. Built to rank, built to convert.',
+    id: 'ai-content',
+    icon: '🎨',
+    title: 'AI Content & Creative Design',
+    description: 'Stop the scroll with machine-speed creativity. AI-powered creatives and video assets that put your brand in its own category.',
   },
   {
-    id: 'seo',
+    id: 'seo-organic',
     icon: '🔍',
-    title: 'SEO & Content',
-    description: 'AI-assisted SEO strategy, technical audits, and content engines that compound your organic traffic month over month.',
+    title: 'SEO & Organic Growth',
+    description: 'Technical SEO foundations and AI-assisted content engines that compound your organic traffic and credibility month over month.',
   },
   {
-    id: 'automation',
+    id: 'automation-ai',
     icon: '⚡',
-    title: 'Automation Systems',
-    description: 'Zapier, Make, and custom AI workflows that eliminate manual work and build systems that run 24/7 without you.',
+    title: 'Automation & AI Integrations',
+    description: 'Custom AI workflows and CRM automations that eliminate manual work and build systems that run 24/7 without you.',
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Services() {
   return (
     <section className="section-pad" style={{ background: 'transparent' }}>
       <div className="container-main">
-        <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
           <span style={{ 
             color: 'var(--accent-primary)', 
             fontWeight: 700, 
@@ -121,7 +121,7 @@ export default function Services() {
           ))}
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: '64px' }}>
+        <div style={{ textAlign: 'center', marginTop: '32px' }}>
           <Link href="/services" className="btn-white">
             View All Services & Specializations
           </Link>

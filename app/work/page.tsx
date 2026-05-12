@@ -5,12 +5,54 @@ import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const caseStudies = [
-  { tag: 'eCommerce / DTC', client: 'Nova Brands Co.', metric: '3.8x ROAS', description: 'Scaled from $8k/mo to $60k/mo ad spend in 90 days with AI-optimized creative testing and full-funnel paid media strategy.', services: ['Paid Ads', 'AI Video Ads'], color: 'var(--accent-primary)' },
-  { tag: 'SaaS / B2B', client: 'Stellar Analytics', metric: '247% Growth', description: 'Ranked 14 target keywords on page 1 within 5 months, generating 340+ qualified leads through AI content engine.', services: ['SEO & Content', 'Web Development'], color: 'var(--accent-peach)' },
-  { tag: 'Local Service', client: 'Apex Medical Group', metric: '4.2x Leads', description: 'Rebuilt Google Ads and location-specific landing pages. Reduced CPL by 62% while quadrupling monthly lead volume.', services: ['Paid Ads', 'Web Development'], color: 'var(--accent-primary)' },
-  { tag: 'Real Estate', client: 'Crest Properties', metric: '91% Lift', description: 'Redesigned site with conversion architecture and retargeting. Monthly pipeline grew from $200k to $1.2M.', services: ['Web Development', 'Paid Ads'], color: 'var(--accent-peach)' },
-  { tag: 'eCommerce', client: 'Pulse Streetwear', metric: '180% Revenue', description: 'Launched influencer-integrated social campaign and Klaviyo email flows. Revenue grew 180% in 6 months.', services: ['Social Media', 'Brand Identity'], color: 'var(--accent-primary)' },
-  { tag: 'B2B SaaS', client: 'Orbit Labs', metric: '52% CPL Drop', description: 'Automated entire lead qualification and nurture system. Cut cost per qualified lead by 52% through AI workflows.', services: ['Automation', 'Paid Ads'], color: 'var(--accent-peach)' },
+  { 
+    tag: 'D2C Fashion', 
+    client: 'Veloura Fashion', 
+    metric: '17.8x ROAS', 
+    description: 'Scaled a women’s fashion brand to ₹67.9L in revenue using high-converting Meta ad creatives, audience testing, and funnel optimization.', 
+    services: ['Meta Ads', 'Performance Marketing', 'Creative Strategy'], 
+    color: 'var(--accent-primary)' 
+  },
+  { 
+    tag: 'Luxury Jewellery', 
+    client: 'Aurelia Jewels', 
+    metric: '8.23x ROAS', 
+    description: 'Boosted revenue for a jewellery brand through festive campaign creatives, precision retargeting, and conversion-focused ad funnels.', 
+    services: ['Meta Ads', 'Retargeting', 'Conversion Funnels'], 
+    color: 'var(--accent-peach)' 
+  },
+  { 
+    tag: 'Wellness / Spirituality', 
+    client: 'Enlightened Circle', 
+    metric: '2,800+ Leads', 
+    description: 'Executed large-scale lead generation campaigns for meditation and wellness programs with optimized targeting and low CPL acquisition.', 
+    services: ['Lead Generation', 'Meta Ads', 'Audience Targeting'], 
+    color: 'var(--accent-primary)' 
+  },
+  { 
+    tag: 'Education', 
+    client: 'ABGI Institute', 
+    metric: '708K+ Clicks', 
+    description: 'Managed high-volume student acquisition campaigns with optimized CPC, large-scale awareness reach, and lead-focused Google advertising.', 
+    services: ['Google Ads', 'Lead Generation', 'Paid Media'], 
+    color: 'var(--accent-peach)' 
+  },
+  { 
+    tag: 'Healthcare', 
+    client: 'Swastikas CDC', 
+    metric: 'UI/UX Design', 
+    description: 'Designed and developed a modern healthcare website experience focused on clarity, trust-building, and seamless user navigation for families.', 
+    services: ['Web Development', 'UI/UX', 'Healthcare Branding'], 
+    color: 'var(--accent-primary)' 
+  },
+  { 
+    tag: 'Food & Beverage', 
+    client: 'Bowl Mami', 
+    metric: 'Social Growth', 
+    description: 'Created visually engaging social media creatives and content systems to strengthen online brand presence and audience engagement.', 
+    services: ['Social Media Management', 'Creative Design', 'Brand Strategy'], 
+    color: 'var(--accent-peach)' 
+  },
 ];
 
 export default function WorkPage() {
@@ -104,18 +146,7 @@ export default function WorkPage() {
                   ))}
                 </div>
 
-                <Link href="/contact" style={{ 
-                  display: 'inline-flex', 
-                  alignItems: 'center', 
-                  gap: '8px', 
-                  fontSize: '15px', 
-                  fontWeight: 800, 
-                  color: 'var(--text-primary)', 
-                  textDecoration: 'none',
-                  transition: 'color 0.2s'
-                }}>
-                  View Full Case Study <ArrowUpRight size={18} />
-                </Link>
+
               </motion.div>
             ))}
           </div>

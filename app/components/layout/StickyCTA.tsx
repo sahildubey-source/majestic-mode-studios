@@ -32,13 +32,12 @@ export default function StickyCTA() {
         >
           <Link
             href="/contact"
-            className="btn-white"
+            className="btn-purple"
             style={{
               padding: '14px 24px',
               fontSize: '14px',
               fontWeight: 600,
-              color: '#0F0F1A',
-              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
+              boxShadow: '0 8px 32px rgba(123, 92, 240, 0.25)',
             }}
           >
             Book Free Strategy Call →
@@ -65,16 +64,15 @@ export default function StickyCTA() {
         >
           <Link
             href="/contact"
-            className="btn-white"
+            className="btn-purple"
             style={{
               padding: '16px 28px',
               fontSize: '15px',
               fontWeight: 600,
-              color: '#0F0F1A',
               width: '100%',
               justifyContent: 'center',
               maxWidth: '360px',
-              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
+              boxShadow: '0 8px 32px rgba(123, 92, 240, 0.25)',
             }}
           >
             Book Free Strategy Call →
