@@ -20,8 +20,8 @@ export default function Hero() {
         alignItems: 'center',
         position: 'relative',
         overflow: 'hidden',
-        paddingTop: '100px',
-        paddingBottom: '60px',
+        paddingTop: '125px',
+        paddingBottom: '85px',
       }}
     >
       <div className="container-main" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '64px', alignItems: 'center' }}>

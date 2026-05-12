@@ -84,7 +84,7 @@ p {
 }
 
 .section-pad {
-  padding: clamp(6px, 1vw, 12px) 0;
+  padding: clamp(32px, 5vw, 64px) 0;
 }
 
 .card-white {
