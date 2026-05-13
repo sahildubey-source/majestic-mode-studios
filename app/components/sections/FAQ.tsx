@@ -8,7 +8,7 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     q: 'How much does it cost to work with Majestic Mode Studios?',
-    a: "We provide bespoke solutions tailored to each brand's unique growth stage and objectives. Most of our partner engagements range from $2,500 to over $10,000 per month. During our initial strategy audit, we'll map out a specific scope and investment level that aligns with your desired ROI—with zero hidden costs.",
+    a: "Our pricing is structured around the specific scale and objectives of your growth mission. We provide bespoke, value-driven models tailored to your brand's unique requirements, ensuring every dollar of investment is directly tied to measurable market results. Following an initial diagnostic audit, we'll provide a transparent, fixed-scope proposal that eliminates hidden costs and focuses entirely on compounding your ROI.",
   },
   {
     q: 'How long until we see measurable results?',
