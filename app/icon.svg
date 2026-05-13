@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200">
+  <g fill="none"
+     stroke="#0F0F1A"
+     stroke-width="12"
+     stroke-linecap="square"
+     stroke-linejoin="miter">
+
+    <!-- Left M -->
+    <path d="M36 170 L36 48" />
+    <path d="M36 48 L86 98" />
+
+    <!-- Center A -->
+    <path d="M62 170 L130 14" />
+    <path d="M130 14 L198 170" />
+
+    <!-- Right M -->
+    <path d="M174 98 L224 48" />
+    <path d="M224 48 L224 170" />
+
+    <!-- Inner symbol -->
+    <path d="M104 112 L122 130 L130 122 L138 130 L156 112" />
+    <path d="M122 130 L130 138 L138 130" />
+
+  </g>
+</svg>
