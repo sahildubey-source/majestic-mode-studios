@@ -198,7 +198,6 @@ export default function Footer() {
             © 2025 Majestic Mode Studios. Crafting digital dominance globally.
           </p>
         </div>
-        </div>
       </div>
     </footer>
   );
