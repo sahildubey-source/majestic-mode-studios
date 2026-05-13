@@ -203,20 +203,7 @@ export default function PrivacyPage() {
           ))}
         </div>
 
-        <div style={{ 
-          marginTop: '80px', 
-          padding: '40px', 
-          background: 'var(--accent-soft)', 
-          borderRadius: '24px', 
-          textAlign: 'center',
-          border: '1px solid var(--accent-light)'
-        }}>
-          <p style={{ fontWeight: 700, color: 'var(--accent-primary)', marginBottom: '8px' }}>Privacy is Paramount</p>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>Questions about how we handle your data? Our DPO is ready to assist.</p>
-          <a href="mailto:support@majesticmodestudios.com" className="btn-purple" style={{ padding: '12px 32px' }}>
-            Email Data Officer
-          </a>
-        </div>
+
       </div>
     </div>
   );

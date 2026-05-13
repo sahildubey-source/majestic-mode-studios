@@ -7,14 +7,14 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 
 const navLinks = [
   { href: '/services', label: 'Services', hasDropdown: true },
-  { href: '/work',     label: 'Work'     },
-  { href: '/about',    label: 'About'    },
-  { href: '/blog',     label: 'Blog'     },
+  { href: '/work', label: 'Work' },
+  { href: '/about', label: 'About' },
+  { href: '/blog', label: 'Blog' },
 ];
 
 export default function Navbar() {
-  const [scrolled,    setScrolled]    = useState(false);
-  const [menuOpen,    setMenuOpen]    = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -186,9 +186,9 @@ export default function Navbar() {
                 </Link>
               </motion.div>
             ))}
-            <Link 
-              href="/contact" 
-              className="btn-purple" 
+            <Link
+              href="/contact"
+              className="btn-purple"
               onClick={() => setMenuOpen(false)}
               style={{ marginTop: 'auto', justifyContent: 'center', padding: '18px' }}
             >
