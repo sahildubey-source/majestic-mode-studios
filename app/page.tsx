@@ -5,7 +5,6 @@ import Services from './components/sections/Services';
 import Process from './components/sections/Process';
 import MidCTA from './components/sections/MidCTA';
 import CaseStudies from './components/sections/CaseStudies';
-import Testimonials from './components/sections/Testimonials';
 import TechStack from './components/sections/TechStack';
 import FAQ from './components/sections/FAQ';
 import FinalCTA from './components/sections/FinalCTA';
@@ -27,7 +26,6 @@ export default function HomePage() {
       <Process />
       <MidCTA />
       <CaseStudies />
-      <Testimonials />
       <TechStack />
       <FAQ />
       <FinalCTA />
