@@ -40,8 +40,8 @@ export default function Footer() {
   return (
     <footer style={{
       borderTop: '1px solid var(--border-light)',
-      paddingTop: '100px',
-      paddingBottom: '60px',
+      paddingTop: '80px',
+      paddingBottom: '40px',
       background: 'rgba(255, 255, 255, 0.4)',
       backdropFilter: 'blur(10px)',
     }}>
@@ -50,7 +50,7 @@ export default function Footer() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
           gap: '64px',
-          marginBottom: '80px',
+          marginBottom: '48px',
         }}>
           {/* Brand column */}
           <div style={{ maxWidth: '320px' }}>
@@ -195,13 +195,9 @@ export default function Footer() {
           gap: '24px',
         }}>
           <p style={{ fontSize: '14px', color: 'var(--text-tertiary)' }}>
-            © 2025 Majestic Mode Studios. Engineering Growth Globally.
+            © 2025 Majestic Mode Studios. Crafting digital dominance globally.
           </p>
-          <div style={{ display: 'flex', gap: '24px' }}>
-             <p style={{ fontSize: '14px', color: 'var(--text-tertiary)' }}>
-              Built with ✦ in the USA
-            </p>
-          </div>
+        </div>
         </div>
       </div>
     </footer>
