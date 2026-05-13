@@ -53,6 +53,10 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -69,7 +73,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Mono:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#FBFBFE" />
       </head>
       <body>
