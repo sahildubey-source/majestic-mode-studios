@@ -50,20 +50,35 @@ export default function Navbar() {
         <div className="container-main" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Logo */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
-            <div style={{
-              width: '32px',
-              height: '32px',
-              background: 'linear-gradient(135deg, #7B5CF0 0%, #FF8A65 100%)',
-              borderRadius: '8px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#fff',
-              fontSize: '18px',
-              fontWeight: 800,
-            }}>
-              M
-            </div>
+            {/* Majestic Mode Studios — exact logo SVG */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 260 200"
+              width="52"
+              height="40"
+              fill="none"
+              stroke="#0F0F1A"
+              strokeWidth="5"
+              strokeLinecap="square"
+              strokeLinejoin="miter"
+              style={{ flexShrink: 0 }}
+            >
+              {/* Left M */}
+              <path d="M36 170 L36 48" />
+              <path d="M36 48 L86 98" />
+
+              {/* Center A */}
+              <path d="M62 170 L130 14" />
+              <path d="M130 14 L198 170" />
+
+              {/* Right M */}
+              <path d="M174 98 L224 48" />
+              <path d="M224 48 L224 170" />
+
+              {/* Inner symbol */}
+              <path d="M104 112 L122 130 L130 122 L138 130 L156 112" />
+              <path d="M122 130 L130 138 L138 130" />
+            </svg>
             <span style={{
               fontFamily: "'Syne', sans-serif",
               fontWeight: 800,
