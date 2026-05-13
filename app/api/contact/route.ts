@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     };
 
     const budgetLabel = budgetLabels[budget] ?? budget;
-    const notifyEmail = process.env.LEAD_NOTIFY_EMAIL ?? 'hello@majesticmodestudios.com';
+    const notifyEmail = process.env.LEAD_NOTIFY_EMAIL ?? 'support@majesticmodestudios.com';
     const fromEmail   = process.env.RESEND_FROM_EMAIL  ?? 'onboarding@resend.dev';
 
     // ── Send lead notification email to YOU ─────────────────────

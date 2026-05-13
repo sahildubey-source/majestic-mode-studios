@@ -179,7 +179,7 @@ If any provision of these Terms is found to be unenforceable, the remaining prov
     content: `For questions about these Terms, contact:
 
 Majestic Mode Studios
-Email: hello@majesticmodestudios.com
+Email: support@majesticmodestudios.com
 Website: www.majesticmodestudios.com
 Response Time: Within 2 business hours`
   },
@@ -239,7 +239,7 @@ export default function TermsPage() {
         }}>
           <p style={{ fontWeight: 700, color: 'var(--accent-primary)', marginBottom: '8px' }}>Need clarification?</p>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>If you have any questions regarding our terms, we&apos;re here to help.</p>
-          <a href="mailto:hello@majesticmodestudios.com" className="btn-purple" style={{ padding: '12px 32px' }}>
+          <a href="mailto:support@majesticmodestudios.com" className="btn-purple" style={{ padding: '12px 32px' }}>
             Contact Legal Team
           </a>
         </div>

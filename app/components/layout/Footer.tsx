@@ -158,12 +158,12 @@ export default function Footer() {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <a
-                href="mailto:majesticmodee@gmail.com"
+                href="mailto:support@majesticmodestudios.com"
                 style={{ fontSize: '15px', color: 'var(--text-secondary)', textDecoration: 'none', fontWeight: 500 }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-primary)')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
               >
-                majesticmodee@gmail.com
+                support@majesticmodestudios.com
               </a>
               <div style={{
                 display: 'inline-flex',

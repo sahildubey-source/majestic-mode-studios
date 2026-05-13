@@ -13,7 +13,7 @@ const sections = [
 
 This Privacy Policy explains how we collect, use, store, and protect personal information when you visit our website, inquire about our services, or engage us as a client.
 
-By using our website or services, you agree to this Privacy Policy. If you do not agree, please stop using our website and contact us at hello@majesticmodestudios.com.`
+By using our website or services, you agree to this Privacy Policy. If you do not agree, please stop using our website and contact us at support@majesticmodestudios.com.`
   },
   {
     id: 'collection',
@@ -99,7 +99,7 @@ After the retention period, data is securely deleted or anonymized.`
 • Nominate a representative in case of death or incapacity
 • File a complaint with the Data Protection Board of India
 
-To exercise these rights, contact: hello@majesticmodestudios.com`
+To exercise these rights, contact: support@majesticmodestudios.com`
   },
   {
     id: 'usa-rights',
@@ -110,7 +110,7 @@ To exercise these rights, contact: hello@majesticmodestudios.com`
 • Opt out of the sale of personal information (Note: We do NOT sell personal data)
 • Non-discrimination for exercising your CCPA rights
 
-To submit a CCPA request, email: hello@majesticmodestudios.com
+To submit a CCPA request, email: support@majesticmodestudios.com
 Subject: "CCPA Request"
 We will respond within 45 days.
 
@@ -130,14 +130,14 @@ All marketing emails comply with the CAN-SPAM Act and include an unsubscribe lin
 
 Our legal basis for processing: contract performance, legitimate interests, legal obligation, and consent.
 
-To exercise GDPR rights, contact: hello@majesticmodestudios.com`
+To exercise GDPR rights, contact: support@majesticmodestudios.com`
   },
   {
     id: 'children',
     title: "10. Children's Privacy",
     content: `Our services are for business professionals and organizations. We do not knowingly collect data from individuals under 18 years of age.
 
-If you believe we have collected data from a minor, contact us immediately at hello@majesticmodestudios.com and we will promptly delete it.`
+If you believe we have collected data from a minor, contact us immediately at support@majesticmodestudios.com and we will promptly delete it.`
   },
   {
     id: 'modifications',
@@ -153,7 +153,7 @@ Continued use of our website after changes are effective constitutes acceptance 
     id: 'contact',
     title: '12. Contact Us',
     content: `Majestic Mode Studios
-Email: hello@majesticmodestudios.com
+Email: support@majesticmodestudios.com
 Website: www.majesticmodestudios.com
 Response Time: Within 2 business hours`
   },
@@ -213,7 +213,7 @@ export default function PrivacyPage() {
         }}>
           <p style={{ fontWeight: 700, color: 'var(--accent-primary)', marginBottom: '8px' }}>Privacy is Paramount</p>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>Questions about how we handle your data? Our DPO is ready to assist.</p>
-          <a href="mailto:hello@majesticmodestudios.com" className="btn-purple" style={{ padding: '12px 32px' }}>
+          <a href="mailto:support@majesticmodestudios.com" className="btn-purple" style={{ padding: '12px 32px' }}>
             Email Data Officer
           </a>
         </div>
