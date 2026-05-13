@@ -4,13 +4,6 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 
-const avatars = [
-  'https://randomuser.me/api/portraits/men/1.jpg',
-  'https://randomuser.me/api/portraits/women/2.jpg',
-  'https://randomuser.me/api/portraits/men/3.jpg',
-  'https://randomuser.me/api/portraits/women/4.jpg',
-];
-
 export default function Hero() {
   return (
     <section
@@ -81,40 +74,6 @@ export default function Hero() {
             <Link href="/work" className="btn-white" style={{ padding: '18px 36px', fontSize: '16px', borderRadius: '16px' }}>
               See Our Work
             </Link>
-          </div>
-
-          {/* Social Proof */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ display: 'flex' }}>
-              {avatars.map((url, i) => (
-                <div
-                  key={i}
-                  style={{
-                    width: '40px',
-                    height: '40px',
-                    borderRadius: '50%',
-                    border: '3px solid #fff',
-                    marginLeft: i === 0 ? 0 : '-12px',
-                    overflow: 'hidden',
-                    background: '#eee',
-                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
-                  }}
-                >
-                  <img src={url} alt="User" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                </div>
-              ))}
-            </div>
-            <div>
-              <p style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '4px' }}>
-                Trusted by <span style={{ color: 'var(--text-primary)' }}>40+ Global Brands</span>
-              </p>
-              <div style={{ display: 'flex', gap: '2px' }}>
-                {[1, 2, 3, 4, 5].map(star => (
-                  <Star key={star} size={14} fill="#FFB800" color="#FFB800" />
-                ))}
-                <span style={{ fontSize: '13px', fontWeight: 600, marginLeft: '4px', color: 'var(--text-secondary)' }}>4.9/5 average rating</span>
-              </div>
-            </div>
           </div>
         </motion.div>
 
