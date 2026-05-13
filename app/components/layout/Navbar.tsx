@@ -49,22 +49,12 @@ export default function Navbar() {
       >
         <div className="container-main" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Logo */}
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
             <img 
               src="/logo.png" 
-              alt="Majestic Mode Studios Icon" 
-              style={{ height: '40px', width: 'auto', objectFit: 'contain' }}
+              alt="Majestic Mode Studios" 
+              style={{ height: '56px', width: 'auto', objectFit: 'contain' }}
             />
-            <span style={{
-              fontFamily: "'Syne', sans-serif",
-              fontWeight: 800,
-              fontSize: '18px',
-              color: '#0F0F1A',
-              letterSpacing: '-0.02em',
-              textTransform: 'uppercase',
-            }}>
-              Majestic Mode Studios
-            </span>
           </Link>
 
           {/* Desktop Links */}
