@@ -33,6 +33,20 @@ const cases = [
     metricLabel: 'Ad Clicks',
     description: 'Managed high-volume student acquisition campaigns with optimized CPC and lead-focused Google advertising.',
   },
+  {
+    tag: 'Healthcare',
+    client: 'Swastikas CDC',
+    metric: 'UI/UX',
+    metricLabel: 'User Experience',
+    description: 'Designed and developed a modern healthcare website experience focused on clarity, trust-building, and seamless navigation.',
+  },
+  {
+    tag: 'Food & Beverage',
+    client: 'Bowl Mami',
+    metric: 'Social',
+    metricLabel: 'Brand Growth',
+    description: 'Created engaging social media creatives and content systems to strengthen online brand presence and audience engagement.',
+  },
 ];
 
 export default function CaseStudies() {
