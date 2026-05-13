@@ -71,8 +71,8 @@ export default function Footer() {
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {[
-                { Icon: LinkedInIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
-                { Icon: InstagramIcon, href: 'https://instagram.com', label: 'Instagram' },
+                { Icon: LinkedInIcon, href: 'https://www.linkedin.com/company/majestic-mode-studios/', label: 'LinkedIn' },
+                { Icon: InstagramIcon, href: 'https://www.instagram.com/majesticmodestudios/', label: 'Instagram' },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
