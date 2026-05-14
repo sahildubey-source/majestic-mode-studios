@@ -4,7 +4,7 @@ import FinalCTA from '../components/sections/FinalCTA';
 export const metadata: Metadata = {
   title: 'Contact | Book Your Free Strategy Call',
   description: 'Book a free 30-minute strategy call with Majestic Mode Studios. We\'ll audit your marketing and show you exactly how to grow.',
-  alternates: { canonical: 'https://majesticmodestudios.com/contact' },
+  alternates: { canonical: 'https://www.majesticmodestudios.com/contact' },
 };
 
 export default function ContactPage() {

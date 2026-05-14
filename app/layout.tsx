@@ -72,6 +72,27 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="theme-color" content="#FBFBFE" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Majestic Mode Studios",
+              "url": "https://www.majesticmodestudios.com",
+              "logo": "https://www.majesticmodestudios.com/icon.svg",
+              "sameAs": [
+                "https://www.linkedin.com/company/majestic-mode-studios/",
+                "https://www.instagram.com/majesticmodestudios/"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "support@majesticmodestudios.com",
+                "contactType": "customer support"
+              }
+            })
+          }}
+        />
       </head>
       <body>
         <Script
