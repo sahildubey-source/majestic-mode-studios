@@ -92,9 +92,41 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = posts[slug];
   if (!post) return { title: 'Post Not Found' };
+
+  const canonicalUrl = `https://www.majesticmodestudios.com/blog/${slug}`;
+  // Build a plain-text excerpt (first ~160 chars of content, no markdown)
+  const excerpt = post.content
+    .replace(/\*\*/g, '')
+    .replace(/\n/g, ' ')
+    .slice(0, 160)
+    .trim();
+
   return {
     title: post.title + ' | Majestic Mode Studios',
-    description: post.title + ' — Insights and strategies from Majestic Mode Studios.',
+    description: excerpt,
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      type: 'article',
+      title: post.title + ' | Majestic Mode Studios',
+      description: excerpt,
+      url: canonicalUrl,
+      siteName: 'Majestic Mode Studios',
+      images: [
+        {
+          url: '/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title + ' | Majestic Mode Studios',
+      description: excerpt,
+      images: ['/og-image.jpg'],
+      creator: '@majesticmode',
+    },
   };
 }
 
