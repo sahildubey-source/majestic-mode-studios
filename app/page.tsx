@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.majesticmodestudios.com',
   },
+  openGraph: {
+    title: 'AI-Powered Creative & Growth Studio | Majestic Mode Studios',
+    description: 'Majestic Mode Studios builds full-stack growth systems for ambitious global brands — AI video ads, paid media, SEO, and automation that compound results. Book your free strategy audit today.',
+    url: 'https://www.majesticmodestudios.com',
+  },
 };
 
 export default function HomePage() {

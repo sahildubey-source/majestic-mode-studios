@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: 'Contact | Book Your Free Strategy Call',
   description: 'Book a free 30-minute strategy call with Majestic Mode Studios. We\'ll audit your marketing and show you exactly how to grow.',
   alternates: { canonical: 'https://www.majesticmodestudios.com/contact' },
+  openGraph: {
+    title: 'Contact | Book Your Free Strategy Call | Majestic Mode Studios',
+    description: 'Book a free 30-minute strategy call with Majestic Mode Studios. We\'ll audit your marketing and show you exactly how to grow.',
+    url: 'https://www.majesticmodestudios.com/contact',
+  },
 };
 
 export default function ContactPage() {

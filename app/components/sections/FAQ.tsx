@@ -33,6 +33,23 @@ export default function FAQ() {
 
   return (
     <section className="section-pad" style={{ background: 'transparent' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map((faq) => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a,
+              },
+            })),
+          }),
+        }}
+      />
       <div className="container-main">
         <div style={{
           display: 'grid',
