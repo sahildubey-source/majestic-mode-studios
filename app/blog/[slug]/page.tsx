@@ -82,6 +82,60 @@ You cannot optimize what you don't measure. Before you spend $1 on Google Ads, y
 
 A properly structured Google Ads account has tightly themed ad groups, exact and phrase match keywords with comprehensive negatives, RSAs with 15 unique headlines, conversion-optimized landing pages, and weekly optimization cadence.`,
   },
+  'scale-d2c-brand-meta-ads': {
+    tag: 'Paid Media',
+    title: 'How to Scale a D2C Brand with Meta Ads in 2025',
+    date: 'May 15, 2025',
+    readTime: '10 min read',
+    color: 'var(--accent-primary)',
+    content: `If you're running a D2C brand and not scaling with Meta ads, you're leaving serious revenue on the table. Meta's advertising platform — Instagram and Facebook combined — remains the single most powerful tool for D2C growth in 2025.
+
+Here's the exact framework we use to scale D2C brands from ₹5L/month to ₹50L/month in ad spend.
+
+**Why Meta Ads Work for D2C**
+
+Meta has purchase intent data on over 3 billion users. When your product matches what someone has shown interest in — fashion, wellness, food, jewellery — Meta can put your ad in front of them at exactly the right moment.
+
+Unlike Google, which captures existing demand, Meta creates demand. You're showing your product to people who didn't know they needed it — and converting them anyway.
+
+**Phase 1: Build the Foundation (Month 1)**
+
+Before spending a rupee on ads, you need three things locked in:
+- A conversion-optimized landing page (minimum 3% conversion rate)
+- Meta Pixel installed and tracking purchases, add-to-carts, and initiate checkouts
+- A creative library of at least 10 ad variants — static images, short videos, and UGC-style content
+
+Without these, scaling will only scale your losses.
+
+**Phase 2: Find Your Winners (Month 2)**
+
+Launch a structured testing campaign with a daily budget of ₹2,000–₹5,000. Test three different audiences, three different creatives per audience, and two different offers. After 7 days, identify your Cost Per Purchase. Any ad set delivering below your target gets scaled. Everything else gets cut.
+
+**Phase 3: Scale Aggressively (Month 3+)**
+
+Once you have winning creatives and audiences, scale using two methods. Vertical scaling: increase budget by 20–30% every 3 days on winning ad sets. Horizontal scaling: duplicate winning ad sets into new audiences — different age groups, different countries, different interest clusters.
+
+**The Creative Formula That Converts**
+
+After running hundreds of D2C campaigns, one creative structure consistently outperforms everything else:
+- 0–3 seconds: Pattern interrupt hook
+- 3–8 seconds: Problem agitation
+- 8–18 seconds: Product as solution
+- 18–25 seconds: Social proof — real reviews, real numbers
+- 25–30 seconds: Urgency CTA
+
+**Retargeting: Where the Real Money Is**
+
+70% of D2C revenue from Meta comes from retargeting. Build three audiences: website visitors (last 30 days), add-to-cart abandoners (last 14 days), and past purchasers (last 90 days). A properly structured retargeting funnel alone can add 2–3x ROAS to your overall account.
+
+**Real Results**
+
+For Veloura Fashion, we implemented this exact framework and achieved 17.8x ROAS — scaling them to ₹67.9L in revenue in a single quarter. The key was disciplined creative testing, a conversion-optimized funnel, and relentless weekly optimization.
+
+**What to Do Next**
+
+If you're a D2C brand spending between ₹50,000 and ₹5,00,000 per month on Meta ads and not seeing at least 4x ROAS, your funnel has a leak. Book a free strategy audit — we'll pinpoint exactly where you're losing money.`,
+  },
 };
 
 export async function generateStaticParams() {
