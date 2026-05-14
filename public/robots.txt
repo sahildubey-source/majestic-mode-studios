@@ -1,5 +1,4 @@
 User-agent: *
-Allow: /
-Disallow: /api/
+Disallow:
 
-Sitemap: https://majesticmodestudios.com/sitemap.xml
+Sitemap: https://www.majesticmodestudios.com/sitemap.xml
