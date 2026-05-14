@@ -82,59 +82,167 @@ You cannot optimize what you don't measure. Before you spend $1 on Google Ads, y
 
 A properly structured Google Ads account has tightly themed ad groups, exact and phrase match keywords with comprehensive negatives, RSAs with 15 unique headlines, conversion-optimized landing pages, and weekly optimization cadence.`,
   },
-  'scale-d2c-brand-meta-ads': {
+  'google-ads-10x-roas': {
     tag: 'Paid Media',
-    title: 'How to Scale a D2C Brand with Meta Ads in 2025',
+    title: 'How to Get 10x ROAS with Google Ads in 2025',
     date: 'May 15, 2025',
-    readTime: '10 min read',
+    readTime: '9 min read',
     color: 'var(--accent-primary)',
-    content: `If you're running a D2C brand and not scaling with Meta ads, you're leaving serious revenue on the table. Meta's advertising platform — Instagram and Facebook combined — remains the single most powerful tool for D2C growth in 2025.
+    content: `Most businesses running Google Ads are happy with 3-4x ROAS. The ones we work with consistently hit 8-12x. Here's the exact difference in how they operate.
 
-Here's the exact framework we use to scale D2C brands from ₹5L/month to ₹50L/month in ad spend.
+**Why Most Google Ads Underperform**
 
-**Why Meta Ads Work for D2C**
+The default Google Ads setup — broad match keywords, smart campaigns, auto-bidding from day one — is designed for Google's revenue, not yours. Without a structured account architecture, you're funding Google's algorithm while your competitors take your customers.
 
-Meta has purchase intent data on over 3 billion users. When your product matches what someone has shown interest in — fashion, wellness, food, jewellery — Meta can put your ad in front of them at exactly the right moment.
+**The Foundation: Account Structure**
 
-Unlike Google, which captures existing demand, Meta creates demand. You're showing your product to people who didn't know they needed it — and converting them anyway.
+High-ROAS accounts follow a strict structure. Each campaign targets one goal. Each ad group targets one tightly themed keyword cluster. This gives Google's algorithm clean signals and gives you clean data.
 
-**Phase 1: Build the Foundation (Month 1)**
+Start with three campaign types:
+- Brand campaigns (your company name) — protect your brand, cheapest clicks
+- High-intent service campaigns (your core services + "agency", "company", "services")
+- Competitor campaigns (target competitor brand names)
 
-Before spending a rupee on ads, you need three things locked in:
-- A conversion-optimized landing page (minimum 3% conversion rate)
-- Meta Pixel installed and tracking purchases, add-to-carts, and initiate checkouts
-- A creative library of at least 10 ad variants — static images, short videos, and UGC-style content
+**Keyword Strategy That Actually Works**
 
-Without these, scaling will only scale your losses.
+Stop using broad match without controls. Use exact and phrase match for your core keywords, and run a tightly managed broad match campaign separately with Target CPA bidding only after you have 30+ conversions.
 
-**Phase 2: Find Your Winners (Month 2)**
+Every week, mine your Search Terms report. Add irrelevant terms as negatives. Add new relevant terms as keywords. This single habit separates 3x ROAS accounts from 10x ROAS accounts.
 
-Launch a structured testing campaign with a daily budget of ₹2,000–₹5,000. Test three different audiences, three different creatives per audience, and two different offers. After 7 days, identify your Cost Per Purchase. Any ad set delivering below your target gets scaled. Everything else gets cut.
+**The Landing Page Is 50% of Your ROAS**
 
-**Phase 3: Scale Aggressively (Month 3+)**
+Your ad gets the click. Your landing page gets the conversion. A 1% conversion rate landing page versus a 5% conversion rate landing page produces 5x the revenue at identical ad spend.
 
-Once you have winning creatives and audiences, scale using two methods. Vertical scaling: increase budget by 20–30% every 3 days on winning ad sets. Horizontal scaling: duplicate winning ad sets into new audiences — different age groups, different countries, different interest clusters.
+Every landing page must have: a headline matching the ad's promise, social proof above the fold, one clear CTA, fast load time under 2 seconds, and mobile optimization.
 
-**The Creative Formula That Converts**
+**Bidding Strategy Progression**
 
-After running hundreds of D2C campaigns, one creative structure consistently outperforms everything else:
-- 0–3 seconds: Pattern interrupt hook
-- 3–8 seconds: Problem agitation
-- 8–18 seconds: Product as solution
-- 18–25 seconds: Social proof — real reviews, real numbers
-- 25–30 seconds: Urgency CTA
+Week 1-4: Manual CPC — control every bid, learn what converts
+Month 2: Target CPA — let Google optimize once you have conversion data
+Month 3+: Target ROAS — the most powerful bidding strategy, but only works with sufficient data
 
-**Retargeting: Where the Real Money Is**
+Never start with Target ROAS on a new account. You'll burn budget before the algorithm learns.
 
-70% of D2C revenue from Meta comes from retargeting. Build three audiences: website visitors (last 30 days), add-to-cart abandoners (last 14 days), and past purchasers (last 90 days). A properly structured retargeting funnel alone can add 2–3x ROAS to your overall account.
+**The Creative Formula for Search Ads**
+
+Your RSA needs 15 unique headlines and 4 descriptions. Include your primary keyword in at least 3 headlines. Include a number (years of experience, clients served, ROAS achieved). Include urgency or a specific offer. Include a question that agitates the problem.
 
 **Real Results**
 
-For Veloura Fashion, we implemented this exact framework and achieved 17.8x ROAS — scaling them to ₹67.9L in revenue in a single quarter. The key was disciplined creative testing, a conversion-optimized funnel, and relentless weekly optimization.
+For ABGI Institute, we managed high-volume Google Ads campaigns that delivered 708K+ clicks with optimized CPC and lead-focused targeting. The key was clean account structure, weekly negative keyword additions, and conversion-optimized landing pages.
 
 **What to Do Next**
 
-If you're a D2C brand spending between ₹50,000 and ₹5,00,000 per month on Meta ads and not seeing at least 4x ROAS, your funnel has a leak. Book a free strategy audit — we'll pinpoint exactly where you're losing money.`,
+If your Google Ads are delivering under 5x ROAS, your account has structural issues. Book a free audit — we'll identify exactly what's costing you and show you the roadmap to 10x.`,
+  },
+  'marketing-funnel-ecommerce': {
+    tag: 'Strategy',
+    title: 'How to Build a Marketing Funnel for eCommerce in 2025',
+    date: 'May 15, 2025',
+    readTime: '8 min read',
+    color: 'var(--accent-peach)',
+    content: `Every rupee you spend on ads without a proper funnel is a rupee wasted. A marketing funnel is the system that turns strangers into customers — and customers into repeat buyers.
+
+**What Is a Marketing Funnel?**
+
+A marketing funnel maps the journey a customer takes from first discovering your brand to making a purchase. Most eCommerce brands skip the funnel and go straight to selling — which is why most ad campaigns underperform.
+
+The three stages are simple: Awareness (they discover you), Consideration (they evaluate you), Conversion (they buy from you).
+
+**Stage 1: Awareness — Get in Front of the Right People**
+
+Your awareness content should educate and entertain, not sell. Reels, TikToks, blog posts, and YouTube shorts that solve a problem or spark curiosity. The goal is to make your target customer aware that your brand exists.
+
+Paid awareness: Meta broad targeting, YouTube pre-rolls, Google Display campaigns targeting relevant interests. Keep CPM low, reach wide, test multiple creatives.
+
+**Stage 2: Consideration — Build Trust**
+
+Once someone has seen your brand, retarget them with trust-building content: customer testimonials, before/after results, behind-the-scenes content, product demonstrations.
+
+This stage is where most brands drop the ball. They retarget with the same product ad the person already ignored. Instead, show them a different angle — social proof, a review, a story.
+
+**Stage 3: Conversion — Make Buying Easy**
+
+Your conversion campaigns target people who have visited your product pages, added to cart, or engaged with your content in the last 14 days. These people know you. Now give them a reason to buy today.
+
+Use urgency (limited stock), value (bundle offer), or risk removal (free returns, money-back guarantee). Your landing page must be fast, clear, and frictionless.
+
+**The Post-Purchase Funnel**
+
+Most eCommerce brands ignore what happens after the first purchase. This is a massive mistake. A customer who has bought once is 5x more likely to buy again.
+
+Build a post-purchase sequence: thank you email within 1 hour, product education email at day 3, cross-sell email at day 7, review request at day 14, loyalty offer at day 30.
+
+**Metrics to Track at Each Stage**
+
+Awareness: CPM, reach, video views, CTR
+Consideration: engagement rate, link clicks, cost per landing page view
+Conversion: conversion rate, cost per purchase, ROAS, average order value
+Retention: repeat purchase rate, customer lifetime value, email open rate
+
+**What to Do Next**
+
+If you're spending on ads without a structured funnel, you're leaving 60-70% of your potential revenue on the table. Book a free strategy audit — we'll map out your full funnel and show you exactly where the leaks are.`,
+  },
+  'instagram-reels-strategy-2025': {
+    tag: 'Social Media',
+    title: 'Instagram Reels Strategy for Brands in 2025',
+    date: 'May 15, 2025',
+    readTime: '7 min read',
+    color: 'var(--accent-peach)',
+    content: `Instagram Reels is the single highest-reach organic content format available to brands in 2025. Brands that master it are building audiences of tens of thousands — for free. Here's exactly how.
+
+**Why Reels Still Dominates**
+
+Instagram's algorithm prioritizes Reels over every other content format. A Reel from a brand with 500 followers can reach 50,000 people if it holds attention. No other format gives new brands this kind of organic reach.
+
+The catch: most brand Reels are boring. They look like ads. The algorithm buries them.
+
+**The Hook Is Everything**
+
+You have 1.5 seconds to stop the scroll. Your first frame and first line of audio must create enough curiosity or emotion to make someone pause.
+
+Hooks that work in 2025:
+- Controversy: "Why we stopped running Meta ads for 30 days"
+- Curiosity: "The one thing 10x ROAS brands do differently"
+- Value promise: "3 mistakes killing your Instagram reach (and how to fix them)"
+- Pattern interrupt: Start mid-action, mid-sentence, or with a surprising visual
+
+**The Content Pillars System**
+
+Stop posting randomly. The brands growing fastest on Instagram operate a 3-pillar content system posted consistently every week.
+
+Pillar 1 — Education (40%): How-to content, tips, insights, breakdowns. This gets saved and shared, which signals the algorithm to boost reach.
+
+Pillar 2 — Entertainment (40%): Behind-the-scenes, storytelling, relatable content, trends with your brand's spin. This gets watched fully, which increases your account's watch time score.
+
+Pillar 3 — Promotion (20%): Product showcases, offers, testimonials, case studies. Keep this to 20% maximum — more kills organic reach.
+
+**Posting Frequency**
+
+5 Reels per week is the sweet spot for brand growth in 2025. Less than 3 per week and the algorithm deprioritizes your account. More than 7 and quality suffers.
+
+Consistency beats virality. An account posting 5 solid Reels per week will outgrow one that posts 1 viral Reel per month.
+
+**Audio Strategy**
+
+Use trending audio for entertainment content — it gets a natural algorithmic boost. Use original audio for educational content — it builds your brand voice and can itself go viral.
+
+Check the Instagram Reels audio trending page every Monday. Save 5-10 trending sounds for the week.
+
+**Hashtag and Caption Strategy**
+
+In 2025, hashtags matter less than they used to. Use 3-5 highly relevant hashtags maximum. Spend more time on your caption — the first line must hook the reader to tap "more", and the rest should add value or drive engagement.
+
+End every caption with a question or a CTA. Comments boost reach more than likes.
+
+**Real Results**
+
+For Bowl Mami, we created a visually engaging social media content system that strengthened their brand presence and drove consistent audience growth through strategic Reels content.
+
+**What to Do Next**
+
+If your Instagram isn't growing or your Reels aren't reaching beyond your existing followers, your content system needs a rebuild. Book a free strategy call — we'll audit your account and give you a 30-day content plan.`,
   },
 };
 
