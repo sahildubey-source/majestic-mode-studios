@@ -67,13 +67,34 @@ export default function RootLayout({
       <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Mono:wght@400;700&display=swap"
+          as="style"
+        />
+        <link
+          id="google-fonts"
           href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Mono:wght@400;700&display=swap"
           rel="stylesheet"
           media="print"
-          onLoad={(e) => {
-            e.currentTarget.media = 'all';
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var f = document.getElementById('google-fonts');
+                if (f) {
+                  f.media = 'all';
+                }
+              })();
+            `
           }}
         />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
+        </noscript>
         <meta name="theme-color" content="#FBFBFE" />
         <script
           type="application/ld+json"
