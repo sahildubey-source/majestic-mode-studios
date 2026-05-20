@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 
@@ -163,17 +164,26 @@ export default function Hero() {
             width: '400px',
             height: '400px',
             borderRadius: '40px',
-            background: 'url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800) center/cover',
+            overflow: 'hidden',
             opacity: 0.8,
             zIndex: 1,
             boxShadow: '0 20px 80px rgba(0,0,0,0.1)',
             transform: 'rotate(-5deg)',
           }}>
+            <Image
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800"
+              alt="Mountain landscape creative visual"
+              fill
+              sizes="400px"
+              priority
+              style={{ objectFit: 'cover' }}
+            />
             <div style={{
               position: 'absolute',
               inset: 0,
               background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.2))',
               borderRadius: '40px',
+              zIndex: 2,
             }} />
           </div>
         </motion.div>
