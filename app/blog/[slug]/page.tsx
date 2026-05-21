@@ -235,6 +235,7 @@ Check the Instagram Reels audio trending page every Monday. Save 5-10 trending s
 In 2025, hashtags matter less than they used to. Use 3-5 highly relevant hashtags maximum. Spend more time on your caption — the first line must hook the reader to tap "more", and the rest should add value or drive engagement.
 
 End every caption with a question or a CTA. Comments boost reach more than likes.
+{{ ... }}
 
 **Real Results**
 
@@ -243,6 +244,136 @@ For Bowl Mami, we created a visually engaging social media content system that s
 **What to Do Next**
 
 If your Instagram isn't growing or your Reels aren't reaching beyond your existing followers, your content system needs a rebuild. Book a free strategy call — we'll audit your account and give you a 30-day content plan.`,
+  },
+  'automation-marketing-agency': {
+    tag: 'Automation',
+    title: '10 Marketing Automation Workflows Every Agency Should Have',
+    date: 'April 15, 2025',
+    readTime: '5 min read',
+    color: 'var(--accent-primary)',
+    content: `The agencies growing fastest in 2025 aren't working harder — they're automated smarter. Here are the 10 workflows saving our team 25+ hours per week.
+
+**Why Automation Is Now Non-Negotiable**
+
+Manual marketing operations don't scale. Every hour your team spends on repetitive tasks — sending follow-up emails, posting to social media, updating spreadsheets — is an hour not spent on strategy, creative, and client results. Automation removes the ceiling on what a lean team can accomplish.
+
+**Workflow 1: Lead Capture to CRM**
+
+Every form submission on your website should automatically create a contact in your CRM, tag them by service interest, and trigger a follow-up sequence. No manual data entry. No leads falling through the cracks. Tools: Zapier + HubSpot or Zoho CRM.
+
+**Workflow 2: Lead Nurture Email Sequence**
+
+A new lead who doesn't convert immediately isn't a lost lead — they're a future client who needs more nurturing. Automatically enroll every new lead in a 5-email sequence over 14 days: value content, case study, FAQ, offer, final follow-up. Average conversion lift: 40-60% more leads closed.
+
+**Workflow 3: Social Media Scheduling**
+
+Batch-create content weekly. Schedule it automatically across Instagram, LinkedIn, and Facebook using Buffer or Later. Your social presence runs consistently without daily manual effort.
+
+**Workflow 4: Client Onboarding**
+
+When a new client signs, automatically trigger: welcome email with onboarding checklist, contract via DocuSign, invoice via Stripe, project setup in your project management tool, kickoff call scheduling link. What used to take 2 hours of admin now takes 0.
+
+**Workflow 5: Reporting Automation**
+
+Client reports should never be manually built. Connect your ad platforms, Google Analytics, and SEO tools to a dashboard (Google Looker Studio is free) that auto-updates. Send automated weekly or monthly report emails directly from the dashboard.
+
+**Workflow 6: Review Request Sequence**
+
+After project completion or a positive client interaction, automatically send a review request email sequence. Brands using this see 3-5x more Google and Clutch reviews — which directly impacts new business.
+
+**Workflow 7: Re-engagement Campaign**
+
+Contacts who haven't engaged in 60 days get automatically enrolled in a re-engagement sequence: a valuable piece of content, a case study relevant to their industry, and a soft offer. Recover 15-25% of dormant leads.
+
+**Workflow 8: Content Repurposing Pipeline**
+
+Every blog post published automatically triggers: social media post creation prompts, email newsletter draft, LinkedIn article reminder. One piece of content becomes five touchpoints with zero additional manual work.
+
+**Workflow 9: Ad Performance Alerts**
+
+Set automated alerts for when ad campaigns deviate from targets — CPL spikes above threshold, ROAS drops below target, budget pacing issues. Catch problems in hours instead of days.
+
+**Workflow 10: Proposal Follow-Up**
+
+When a proposal is sent and not opened within 24 hours, automatically send a check-in. When opened but not signed within 48 hours, trigger a follow-up call reminder. Automated proposal follow-up increases close rates by 30-40%.
+
+**What to Do Next**
+
+You don't need to implement all 10 workflows at once. Start with lead capture to CRM and the nurture sequence — these two alone will transform your conversion rate. Book a free strategy call and we'll show you exactly how to set these up for your business.`,
+  },
+  'landing-page-conversion-rate': {
+    tag: 'CRO',
+    title: "The 9 Landing Page Elements That Doubled Our Clients' Conversion Rates",
+    date: 'April 9, 2025',
+    readTime: '10 min read',
+    color: 'var(--accent-peach)',
+    content: `We A/B tested over 200 landing page variants across eCommerce, education, healthcare, and professional services clients. These 9 elements consistently moved conversion rates from 1-2% to 5-8%. Every single time.
+
+**Why Most Landing Pages Fail**
+
+Most landing pages are built to look good — not to convert. They have beautiful design, vague headlines, and three competing CTAs. The result is a page that impresses designers and frustrates potential customers. Conversion rate optimization is about one thing: removing every possible reason for someone not to take action.
+
+**Element 1: A Headline That Matches the Ad Promise**
+
+The single most important element on any landing page is message match — the headline must directly reflect what the ad said. If your ad says "Free SEO Audit for D2C Brands," your headline must say exactly that. Any disconnect between ad and landing page creates instant distrust and increases bounce rate dramatically.
+
+We've seen conversion rates double simply by aligning headline copy with ad copy. No other changes. Just message match.
+
+**Element 2: A Single, Clear CTA**
+
+Every landing page with two or more CTAs converts worse than one with a single CTA. This is one of the most consistently proven findings in CRO. Multiple options create decision paralysis. One option creates clarity.
+
+Your CTA should be: specific ("Book Your Free 30-Minute Audit"), benefit-led (what they get, not what they do), visually dominant (contrasting color, prominent placement), and repeated 2-3 times down the page.
+
+**Element 3: Social Proof Above the Fold**
+
+Before someone scrolls, they need a reason to trust you. Social proof above the fold — customer logos, review count, a specific result — provides that reason instantly.
+
+Specificity matters enormously. "500+ happy clients" is weak. "17.8x ROAS for Veloura Fashion" is strong. Real numbers from real clients outperform generic claims by 3-4x in conversion impact.
+
+**Element 4: A Benefit-Led Subheadline**
+
+Your headline captures attention. Your subheadline converts it into interest. The subheadline should answer: "What do I get and why does it matter to me?" in one sentence.
+
+Example: Headline — "Free SEO Audit for D2C Brands." Subheadline — "We'll identify exactly why your organic traffic isn't converting and give you a prioritized 30-day roadmap to fix it."
+
+**Element 5: Fast Load Time**
+
+Every second of load time reduces conversions by 7%. A page that loads in 4 seconds converts 28% worse than one that loads in 1 second. This is not a minor technical detail — it's a major conversion lever.
+
+Target under 2 seconds on mobile. Use Next.js image optimization, lazy loading for below-fold content, and async font loading. Run PageSpeed Insights monthly and treat anything under 85 on mobile as a conversion problem.
+
+**Element 6: A Risk Reversal**
+
+The biggest barrier to conversion is perceived risk. "What if this doesn't work? What if I waste my money?" Risk reversal removes that barrier entirely.
+
+Risk reversals that work: money-back guarantees, free trials, free first session, "cancel anytime," performance-based pricing. Even a simple "no credit card required" on a free trial CTA significantly increases conversion rates.
+
+**Element 7: Urgency and Scarcity**
+
+Urgency creates action. Without a reason to act now, most visitors will intend to come back — and never do. Ethical urgency (not fake countdown timers) includes: limited spots available this month, price increasing after a date, bonus available for a limited time.
+
+For service businesses: "We take on 3 new clients per month — 1 spot remaining" is honest if true, and highly effective.
+
+**Element 8: A Visual Hierarchy That Guides the Eye**
+
+Your page layout must guide visitors through a specific journey: headline → subheadline → social proof → benefits → CTA. If the eye doesn't know where to go next, it leaves.
+
+Use size, color, and whitespace to create clear visual hierarchy. Your CTA button should be the most visually prominent element on the page. Every section should naturally lead to the next.
+
+**Element 9: Mobile-First Design**
+
+Over 70% of ad traffic lands on mobile. A landing page designed for desktop and adapted for mobile will always underperform one designed mobile-first. Text must be readable without zooming. CTAs must be thumb-friendly (minimum 44px height). Forms must have large input fields. Load time on 4G must be under 2 seconds.
+
+Test your landing page on a real mobile device every time you make changes. Emulators miss real-world friction points.
+
+**The Results**
+
+For Aurelia Jewellery, implementing these 9 elements on their campaign landing pages increased conversion rate from 1.4% to 6.2% — a 4.4x improvement with zero increase in ad spend. Same traffic, dramatically more revenue.
+
+**What to Do Next**
+
+If your landing pages are converting under 3%, you're leaving the majority of your ad spend on the table. Book a free audit — we'll review your current pages and give you a prioritized list of changes that will move the needle fastest.`,
   },
 };
 
@@ -355,7 +486,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               return (
                 <p key={i} style={{ marginBottom: '32px' }}>
                   {parts.map((part, j) =>
-                    part.startsWith('**') ? <strong key={j} style={{ color: 'var(--text-primary)', fontWeight: 700 }}>{part.replace(/\*\*/g, '')}</strong> : part
+                    part.startsWith('**') ? (
+                      <strong key={j} style={{ color: 'var(--text-primary)', fontWeight: 700 }}>{part.replace(/\*\*/g, '')}</strong>
+                    ) : (
+                      part.split('\n').map((line, k) => (
+                        <span key={`${j}-${k}`}>
+                          {k > 0 && <br />}
+                          {line}
+                        </span>
+                      ))
+                    )
                   )}
                 </p>
               );
