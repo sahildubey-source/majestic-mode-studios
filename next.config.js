@@ -7,9 +7,6 @@ const nextConfig = {
       { protocol: "https", hostname: "avatars.githubusercontent.com" },
     ],
   },
-  experimental: {
-    optimizeCss: false,
-  },
   async redirects() {
     return [
       {
