@@ -9,7 +9,7 @@ const services = [
     id: 'web-dev',
     number: '01',
     icon: '💻',
-    title: 'AI-Powered Website Development',
+    title: 'AI-Powered Website Development & Web Design Services',
     tagline: 'Built to rank. Built to convert. Built to scale.',
     description: 'Most businesses immediately understand the value of a professional website. We design and build high-performance websites and landing pages in Next.js, Webflow, or WordPress, conversion-optimized from the ground up.',
     features: [
@@ -29,7 +29,7 @@ const services = [
     id: 'performance-marketing',
     number: '02',
     icon: '📈',
-    title: 'Performance Marketing & Paid Ads',
+    title: 'Performance Marketing & High-ROI Paid Ads Agency Services',
     tagline: 'High-ROI campaigns driven by data, not guesswork.',
     description: 'We manage Meta Ads, Google Ads, and TikTok Ads with a data-first approach. From audience architecture to bidding strategy, we own the entire paid acquisition system.',
     features: [
@@ -48,7 +48,7 @@ const services = [
     id: 'social-media',
     number: '03',
     icon: '📱',
-    title: 'Social Media Management',
+    title: 'Social Media Management & Brand Positioning Services',
     tagline: 'Build authority and grow an audience that buys.',
     description: 'Consistent, on-brand content systems that build authority and grow engaged audiences across every platform. We handle everything from reels strategy to brand positioning.',
     features: [
@@ -67,7 +67,7 @@ const services = [
     id: 'ai-content',
     number: '04',
     icon: '🎨',
-    title: 'AI Content Creation & Creative Design',
+    title: 'AI Content Creation, Video Editing & Creative Design',
     tagline: 'This becomes your differentiator.',
     description: 'Stop the scroll with machine-speed creativity. We use generative AI tools like Midjourney and Runway ML to produce high-converting assets that put your brand in a category of its own.',
     features: [
@@ -86,7 +86,7 @@ const services = [
     id: 'seo-organic',
     number: '05',
     icon: '🔍',
-    title: 'SEO & Organic Growth',
+    title: 'Search Engine Optimization (SEO) & Organic Growth Services',
     tagline: 'Builds long-term credibility and compounding traffic.',
     description: 'Technical SEO foundations, AI-assisted content production, and strategic link building aligned to your revenue targets. Durable growth that lowers your customer acquisition costs.',
     features: [
@@ -105,7 +105,7 @@ const services = [
     id: 'automation-ai',
     number: '06',
     icon: '⚡',
-    title: 'Automation & AI Integrations',
+    title: 'Marketing Automation & Custom AI Integration Solutions',
     tagline: 'Makes your agency look advanced/premium.',
     description: 'Zapier, Make, and custom AI workflows that eliminate manual work. We build systems that run 24/7, from lead capture to CRM automation and AI business solutions.',
     features: [
@@ -120,6 +120,25 @@ const services = [
     color: 'var(--accent-peach)',
     results: '40+ Hours Saved Per Week',
   },
+];
+
+const faqs = [
+  {
+    question: "What makes Majestic Mode Studios different from a traditional marketing agency?",
+    answer: "Unlike traditional agencies that focus on disconnected marketing tasks, we build full-stack growth systems. We combine high-converting Next.js web development, data-driven paid advertising (Meta/Google Ads), SEO, and custom AI automation to engineer compound revenue growth and sustainable brand dominance."
+  },
+  {
+    question: "Do you specialize in a specific industry?",
+    answer: "We build integrated growth systems for ambitious global brands across diverse sectors including eCommerce, D2C fashion and jewelry, B2B services, professional education, and healthcare. Our systems are built around universal consumer psychology and conversion principles tailored to your specific audience."
+  },
+  {
+    question: "What is your typical onboarding timeline?",
+    answer: "Once the Service Agreement is finalized and onboarding assets are received, our standard setup and kickoff period is 5 to 7 business days. This includes setting up campaign architectures, technical SEO audits, connecting tracking pixels, and mapping custom marketing funnels."
+  },
+  {
+    question: "How do you track and measure campaign performance?",
+    answer: "We believe in complete transparency. We integrate advanced conversion tracking across all platforms and build custom Looker Studio dashboards that sync live data from your Meta, Google, and Analytics accounts. You will have 24/7 real-time access to metrics that matter—such as Customer Acquisition Cost (CAC), Return on Ad Spend (ROAS), and net pipeline value."
+  }
 ];
 
 export default function ServicesClient() {
@@ -233,10 +252,47 @@ export default function ServicesClient() {
                   <span style={{ color: 'var(--accent-primary)' }}>📊</span> {svc.results}
                 </div>
 
-                <div style={{ display: 'flex', gap: '16px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                   <Link href="/contact" className="btn-purple" style={{ padding: '14px 28px', fontSize: '15px' }}>
                     Get Started ↗
                   </Link>
+                  {svc.id === 'web-dev' || svc.id === 'performance-marketing' ? (
+                    <Link
+                      href="/work"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        fontSize: '15px',
+                        fontWeight: 700,
+                        color: 'var(--text-secondary)',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s',
+                      }}
+                      onMouseEnter={e => (e.currentTarget.style.color = svc.color)}
+                      onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+                    >
+                      View Case Studies <ArrowUpRight size={16} />
+                    </Link>
+                  ) : svc.id === 'seo-organic' ? (
+                    <Link
+                      href="/blog"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        fontSize: '15px',
+                        fontWeight: 700,
+                        color: 'var(--text-secondary)',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s',
+                      }}
+                      onMouseEnter={e => (e.currentTarget.style.color = svc.color)}
+                      onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+                    >
+                      Read SEO Insights <ArrowUpRight size={16} />
+                    </Link>
+                  ) : null}
                 </div>
               </motion.div>
 
@@ -268,6 +324,77 @@ export default function ServicesClient() {
           </div>
         </section>
       ))}
+
+      {/* FAQ Section */}
+      <section style={{ padding: '100px 0 50px', background: 'transparent' }}>
+        <div className="container-main" style={{ maxWidth: '850px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+            <span style={{ 
+              color: 'var(--accent-primary)', 
+              fontWeight: 700, 
+              fontSize: '12px', 
+              textTransform: 'uppercase', 
+              letterSpacing: '0.1em',
+              display: 'block',
+              marginBottom: '16px'
+            }}>
+              ✦ Frequently Asked Questions
+            </span>
+            <h2>Common <span className="text-highlight">Queries</span></h2>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+            {faqs.map((faq, idx) => (
+              <div 
+                key={idx} 
+                className="card-white" 
+                style={{ 
+                  padding: '32px 40px', 
+                  border: '1px solid var(--border-light)',
+                  textAlign: 'left'
+                }}
+              >
+                <h3 style={{ 
+                  fontSize: '18px', 
+                  color: 'var(--text-primary)', 
+                  marginBottom: '16px',
+                  fontFamily: "'Syne', sans-serif",
+                  fontWeight: 800
+                }}>
+                  {faq.question}
+                </h3>
+                <p style={{ 
+                  fontSize: '16px', 
+                  lineHeight: '1.8', 
+                  color: 'var(--text-secondary)',
+                  margin: 0
+                }}>
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Dynamic JSON-LD FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })
+        }}
+      />
 
       {/* Bottom CTA */}
       <section style={{ padding: '50px 0', background: 'transparent', textAlign: 'center' }}>

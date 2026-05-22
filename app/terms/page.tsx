@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service | Majestic Mode Studios',
   description: 'Terms of Service for Majestic Mode Studios.',
+  alternates: {
+    canonical: 'https://www.majesticmodestudios.com/terms',
+  },
 };
 
 const sections = [

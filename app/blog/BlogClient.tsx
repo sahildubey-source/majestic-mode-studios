@@ -6,6 +6,33 @@ import { motion } from 'framer-motion';
 
 const posts = [
   {
+    slug: 'google-ads-10x-roas',
+    tag: 'Paid Media',
+    title: 'How to Get 10x ROAS with Google Ads in 2025',
+    excerpt: "Most businesses are happy with 3-4x ROAS. We show you the exact account structure, landing page elements, and keyword strategy we use to hit 8-12x.",
+    readTime: '9 min read',
+    date: 'May 15, 2025',
+    color: 'var(--accent-primary)',
+  },
+  {
+    slug: 'marketing-funnel-ecommerce',
+    tag: 'Strategy',
+    title: 'How to Build a Marketing Funnel for eCommerce in 2025',
+    excerpt: "Every rupee spent on ads without a proper funnel is wasted. Learn how to structure awareness, consideration, and conversion campaigns for peak ROI.",
+    readTime: '8 min read',
+    date: 'May 15, 2025',
+    color: 'var(--accent-peach)',
+  },
+  {
+    slug: 'instagram-reels-strategy-2025',
+    tag: 'Social Media',
+    title: 'Instagram Reels Strategy for Brands in 2025',
+    excerpt: "Instagram Reels is the single highest-reach organic format. Master the scroll-stopping hook formula and a 3-pillar content system to scale for free.",
+    readTime: '7 min read',
+    date: 'May 15, 2025',
+    color: 'var(--accent-peach)',
+  },
+  {
     slug: 'ai-video-ads-2025',
     tag: 'AI & Creative',
     title: 'How AI Video Ads Outperform Traditional Ads in 2025',

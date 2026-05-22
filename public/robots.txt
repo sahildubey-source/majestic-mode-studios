@@ -1,4 +1,15 @@
 User-agent: *
-Disallow:
+
+Allow: /
+
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account
+Disallow: /recommendations
+Disallow: /cdn/
+Disallow: /search
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?variant=
 
 Sitemap: https://www.majesticmodestudios.com/sitemap.xml

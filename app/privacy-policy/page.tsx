@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Majestic Mode Studios',
   description: 'Privacy Policy for Majestic Mode Studios.',
+  alternates: {
+    canonical: 'https://www.majesticmodestudios.com/privacy-policy',
+  },
 };
 
 const sections = [
