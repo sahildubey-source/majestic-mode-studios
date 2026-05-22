@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.majesticmodestudios.com/privacy-policy',
   },
+  openGraph: {
+    title: 'Privacy Policy | Majestic Mode Studios',
+    description: 'Privacy Policy for Majestic Mode Studios.',
+    url: 'https://www.majesticmodestudios.com/privacy-policy',
+  },
 };
 
 const sections = [

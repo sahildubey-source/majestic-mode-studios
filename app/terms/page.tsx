@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.majesticmodestudios.com/terms',
   },
+  openGraph: {
+    title: 'Terms of Service | Majestic Mode Studios',
+    description: 'Terms of Service for Majestic Mode Studios.',
+    url: 'https://www.majesticmodestudios.com/terms',
+  },
 };
 
 const sections = [
