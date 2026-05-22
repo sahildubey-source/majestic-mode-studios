@@ -10,17 +10,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'majesticmodestudios.com',
-          },
-        ],
-        destination: 'https://www.majesticmodestudios.com/:path*',
-        permanent: true,
-      },
-      {
         source: '/collections/frontpage',
         destination: '/',
         permanent: true,
