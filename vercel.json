@@ -52,6 +52,16 @@
       "source": "/elementor-footer",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/customer_authentication/:path*",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
