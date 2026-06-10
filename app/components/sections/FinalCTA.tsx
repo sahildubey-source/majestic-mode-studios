@@ -10,7 +10,7 @@ export default function FinalCTA() {
     const initCalendly = () => {
       if ((window as any).Calendly) {
         (window as any).Calendly.initInlineWidget({
-          url: 'https://calendly.com/majesticmode',
+          url: 'https://calendly.com/majesticmode/new-meeting',
           parentElement: document.getElementById('calendly-widget'),
         });
       }
@@ -94,7 +94,7 @@ export default function FinalCTA() {
           <div
             id="calendly-widget"
             className="calendly-inline-widget"
-            data-url="https://calendly.com/majesticmode"
+            data-url="https://calendly.com/majesticmode/new-meeting"
             style={{ minWidth: '320px', height: '700px' }}
           />
           <Script
@@ -103,7 +103,7 @@ export default function FinalCTA() {
             onLoad={() => {
               if ((window as any).Calendly) {
                 (window as any).Calendly.initInlineWidget({
-                  url: 'https://calendly.com/majesticmode',
+                  url: 'https://calendly.com/majesticmode/new-meeting',
                   parentElement: document.getElementById('calendly-widget'),
                 });
               }
