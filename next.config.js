@@ -59,6 +59,32 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/hello-world',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/hello/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/products/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/b',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/:path*/',
+        has: [{ type: 'host', value: 'majesticmodestudios.com' }],
+        destination: 'https://www.majesticmodestudios.com/:path*',
+        permanent: true,
+      },
     ];
   },
 };
