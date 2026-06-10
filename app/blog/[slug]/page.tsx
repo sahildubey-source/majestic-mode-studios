@@ -58,7 +58,7 @@ Brands posting consistently 5-7x per week on Reels/TikTok dramatically outperfor
 The fastest-growing eCommerce brands we work with are integrating micro-influencer partnerships into their content system — not as a separate strategy but as an extension of their owned content.`,
   },
   'google-ads-failing': {
-    tag: 'Paid Media', title: 'Why Your Google Ads Are Failing (And How to Fix Them)',
+    tag: 'Paid Media', title: 'How to Fix Underperforming Google Ads Campaigns in 2025',
     date: 'April 28, 2025', readTime: '6 min read', color: 'var(--accent-primary)',
     content: `After auditing 40+ Google Ads accounts, we've identified 8 consistent mistakes that are killing ROI for most businesses.
 
@@ -137,7 +137,7 @@ If your Google Ads are delivering under 5x ROAS, your account has structural iss
   },
   'marketing-funnel-ecommerce': {
     tag: 'Strategy',
-    title: 'How to Build a Marketing Funnel for eCommerce in 2025',
+    title: 'eCommerce Marketing Funnel: Complete Guide to Building One in 2025',
     date: 'May 15, 2025',
     readTime: '8 min read',
     color: 'var(--accent-peach)',
@@ -235,7 +235,6 @@ Check the Instagram Reels audio trending page every Monday. Save 5-10 trending s
 In 2025, hashtags matter less than they used to. Use 3-5 highly relevant hashtags maximum. Spend more time on your caption — the first line must hook the reader to tap "more", and the rest should add value or drive engagement.
 
 End every caption with a question or a CTA. Comments boost reach more than likes.
-{{ ... }}
 
 **Real Results**
 
@@ -303,7 +302,7 @@ You don't need to implement all 10 workflows at once. Start with lead capture to
   },
   'landing-page-conversion-rate': {
     tag: 'CRO',
-    title: "The 9 Landing Page Elements That Doubled Our Clients' Conversion Rates",
+    title: 'What Makes a Landing Page Convert: 9 Elements That Double Conversion Rates',
     date: 'April 9, 2025',
     readTime: '10 min read',
     color: 'var(--accent-peach)',
@@ -415,6 +414,60 @@ For Majestic Mode Studios clients, organic traffic isn't just vanity metrics. We
 
 If you're spending on ads without a structured SEO strategy, you're leaving a high-yield asset unbuilt. Book a free strategy call — we'll analyze your search opportunity and map out your authority blueprint.`,
   },
+  'scale-d2c-brand-meta-ads': {
+    tag: 'Paid Media',
+    title: 'How to Scale a D2C Brand with Meta Ads in 2025',
+    date: 'May 15, 2025',
+    readTime: '10 min read',
+    color: 'var(--accent-primary)',
+    content: `If you're running a D2C brand and not scaling with Meta ads, you're leaving serious revenue on the table. Meta's advertising platform — Instagram and Facebook combined — remains the single most powerful tool for D2C growth in 2025.
+
+Here's the exact framework we use to scale D2C brands from Rs.5L/month to Rs.50L/month in ad spend.
+
+**Why Meta Ads Work for D2C**
+
+Meta has purchase intent data on over 3 billion users. When your product matches what someone has shown interest in — fashion, wellness, food, jewellery — Meta can put your ad in front of them at exactly the right moment.
+
+Unlike Google, which captures existing demand, Meta creates demand. You're showing your product to people who didn't know they needed it — and converting them anyway.
+
+**Phase 1: Build the Foundation (Month 1)**
+
+Before spending a rupee on ads, you need three things locked in:
+- A conversion-optimized landing page (minimum 3% conversion rate)
+- Meta Pixel installed and tracking purchases, add-to-carts, and initiate checkouts
+- A creative library of at least 10 ad variants — static images, short videos, and UGC-style content
+
+Without these, scaling will only scale your losses.
+
+**Phase 2: Find Your Winners (Month 2)**
+
+Launch a structured testing campaign with a daily budget of Rs.2,000-Rs.5,000. Test three different audiences, three different creatives per audience, and two different offers. After 7 days, identify your Cost Per Purchase. Any ad set delivering below your target gets scaled. Everything else gets cut.
+
+**Phase 3: Scale Aggressively (Month 3+)**
+
+Once you have winning creatives and audiences, scale using two methods. Vertical scaling: increase budget by 20-30% every 3 days on winning ad sets. Horizontal scaling: duplicate winning ad sets into new audiences — different age groups, different countries, different interest clusters.
+
+**The Creative Formula That Converts**
+
+After running hundreds of D2C campaigns, one creative structure consistently outperforms everything else:
+- 0-3 seconds: Pattern interrupt hook
+- 3-8 seconds: Problem agitation
+- 8-18 seconds: Product as solution
+- 18-25 seconds: Social proof — real reviews, real numbers
+- 25-30 seconds: Urgency CTA
+
+**Retargeting: Where the Real Money Is**
+
+70% of D2C revenue from Meta comes from retargeting. Build three audiences: website visitors (last 30 days), add-to-cart abandoners (last 14 days), and past purchasers (last 90 days). A properly structured retargeting funnel alone can add 2-3x ROAS to your overall account.
+
+**Real Results**
+
+For Veloura Fashion, we implemented this exact framework and achieved 17.8x ROAS — scaling them to Rs.67.9L in revenue in a single quarter. The key was disciplined creative testing, a conversion-optimized funnel, and relentless weekly optimization.
+
+**What to Do Next**
+
+If you're a D2C brand spending between Rs.50,000 and Rs.5,00,000 per month on Meta ads and not seeing at least 4x ROAS, your funnel has a leak. Book a free strategy audit — we'll pinpoint exactly where you're losing money.`,
+  },
 };
 
 export async function generateStaticParams() {
@@ -427,7 +480,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return { title: 'Post Not Found' };
 
   const canonicalUrl = `https://www.majesticmodestudios.com/blog/${slug}`;
-  // Build a plain-text excerpt (first ~160 chars of content, no markdown)
   const excerpt = post.content
     .replace(/\*\*/g, '')
     .replace(/\n/g, ' ')
@@ -480,7 +532,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <article style={{ background: 'transparent', minHeight: '100vh' }}>
-      {/* Header */}
       <div style={{ paddingTop: '160px', paddingBottom: '64px', borderBottom: '1px solid var(--border-light)' }}>
         <div className="container-main" style={{ maxWidth: '850px' }}>
           <Link href="/blog" style={{
@@ -505,7 +556,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
       </div>
 
-      {/* Content */}
       <div style={{ padding: '80px 0 140px' }}>
         <div className="container-main" style={{ maxWidth: '850px' }}>
           <div style={{ fontSize: '18px', lineHeight: 1.8, color: 'var(--text-secondary)' }}>
@@ -513,11 +563,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               if (block.startsWith('**') && block.endsWith('**')) {
                 return <h2 key={i} style={{ fontSize: '32px', color: 'var(--text-primary)', marginTop: '56px', marginBottom: '20px' }}>{block.replace(/\*\*/g, '')}</h2>;
               }
-              if (block.startsWith('- ')) {
+              if (block.startsWith('- ') || block.startsWith('1. ')) {
                 return (
                   <ul key={i} style={{ paddingLeft: '24px', marginBottom: '32px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     {block.split('\n').map((line, j) => (
-                      <li key={j} style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>{line.replace('- ', '')}</li>
+                      <li key={j} style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>{line.replace(/^[-\d.]\s?/, '')}</li>
                     ))}
                   </ul>
                 );
