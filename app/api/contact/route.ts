@@ -31,6 +31,9 @@ export async function POST(request: Request) {
     const notifyEmail = process.env.LEAD_NOTIFY_EMAIL ?? 'hello@majesticmodestudios.com';
     const fromEmail   = process.env.RESEND_FROM_EMAIL  ?? 'onboarding@resend.dev';
 
+    console.log('notifyEmail target:', notifyEmail);
+    console.log('fromEmail sender:', fromEmail);
+
     // ── Send lead notification email to YOU ─────────────────────
     const sendNotify = await resend.emails.send({
       from: `Majestic Mode Studios <${fromEmail}>`,
@@ -97,7 +100,12 @@ export async function POST(request: Request) {
         </html>
       `,
     });
-    console.log('Notify Email Result:', sendNotify);
+    console.log('Notify Email Result:', JSON.stringify(sendNotify));
+    if (sendNotify.error) {
+      console.error('❌ NOTIFY EMAIL FAILED:', JSON.stringify(sendNotify.error));
+    } else {
+      console.log('✅ Notify email sent, id:', sendNotify.data?.id);
+    }
 
     // ── Send confirmation email to THE LEAD ──────────────────────
     const sendConfirm = await resend.emails.send({
