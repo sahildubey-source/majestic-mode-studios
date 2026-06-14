@@ -15,7 +15,9 @@ export default function ContactForm() {
 
   const nameRef      = useRef<HTMLInputElement>(null);
   const emailRef     = useRef<HTMLInputElement>(null);
+  const phoneRef     = useRef<HTMLInputElement>(null);
   const companyRef   = useRef<HTMLInputElement>(null);
+  const websiteRef   = useRef<HTMLInputElement>(null);
   const challengeRef = useRef<HTMLTextAreaElement>(null);
   const faxRef       = useRef<HTMLInputElement>(null); // honeypot
 
@@ -27,15 +29,17 @@ export default function ContactForm() {
     const payload = {
       name:      nameRef.current?.value.trim()      ?? '',
       email:     emailRef.current?.value.trim()     ?? '',
+      phone:     phoneRef.current?.value.trim()     ?? '',
       company:   companyRef.current?.value.trim()   ?? '',
+      website:   websiteRef.current?.value.trim()   ?? '',
       challenge: challengeRef.current?.value.trim() ?? '',
       fax:       faxRef.current?.value              ?? '', // honeypot
     };
 
     // Client-side guard
-    if (!payload.name || !payload.email || !payload.company || !payload.challenge) {
+    if (!payload.name || !payload.email || !payload.phone || !payload.company || !payload.challenge) {
       setFormState('error');
-      setErrorMsg('Please fill in all fields.');
+      setErrorMsg('Please fill in all required fields.');
       return;
     }
 
@@ -174,10 +178,10 @@ export default function ContactForm() {
         </p>
       </div>
 
-      {/* Row: Name + Email */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+      {/* Row 1: Name + Email */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
         <div style={fieldWrap}>
-          <label htmlFor="cf-name" style={labelStyle}>Your Name</label>
+          <label htmlFor="cf-name" style={labelStyle}>Your Name <span style={{ color: 'var(--accent-primary)' }}>*</span></label>
           <input
             id="cf-name"
             ref={nameRef}
@@ -191,7 +195,7 @@ export default function ContactForm() {
           />
         </div>
         <div style={fieldWrap}>
-          <label htmlFor="cf-email" style={labelStyle}>Work Email</label>
+          <label htmlFor="cf-email" style={labelStyle}>Work Email <span style={{ color: 'var(--accent-primary)' }}>*</span></label>
           <input
             id="cf-email"
             ref={emailRef}
@@ -206,19 +210,53 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Company */}
+      {/* Row 2: Phone + Company */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
+        <div style={fieldWrap}>
+          <label htmlFor="cf-phone" style={labelStyle}>Mobile Number <span style={{ color: 'var(--accent-primary)' }}>*</span></label>
+          <input
+            id="cf-phone"
+            ref={phoneRef}
+            type="tel"
+            placeholder="+91 98765 43210"
+            autoComplete="tel"
+            required
+            onFocus={() => setFocusedField('phone')}
+            onBlur={() => setFocusedField(null)}
+            style={{ ...inputBase, ...(focusedField === 'phone' ? inputFocused : {}) }}
+          />
+        </div>
+        <div style={fieldWrap}>
+          <label htmlFor="cf-company" style={labelStyle}>Company / Brand <span style={{ color: 'var(--accent-primary)' }}>*</span></label>
+          <input
+            id="cf-company"
+            ref={companyRef}
+            type="text"
+            placeholder="Acme Corp"
+            autoComplete="organization"
+            required
+            onFocus={() => setFocusedField('company')}
+            onBlur={() => setFocusedField(null)}
+            style={{ ...inputBase, ...(focusedField === 'company' ? inputFocused : {}) }}
+          />
+        </div>
+      </div>
+
+      {/* Row 3: Website (optional) */}
       <div style={fieldWrap}>
-        <label htmlFor="cf-company" style={labelStyle}>Company / Brand</label>
+        <label htmlFor="cf-website" style={labelStyle}>
+          Company Website{' '}
+          <span style={{ color: 'var(--text-tertiary)', fontWeight: 400, textTransform: 'none', letterSpacing: 0, fontSize: '11px' }}>(optional)</span>
+        </label>
         <input
-          id="cf-company"
-          ref={companyRef}
-          type="text"
-          placeholder="Acme Corp"
-          autoComplete="organization"
-          required
-          onFocus={() => setFocusedField('company')}
+          id="cf-website"
+          ref={websiteRef}
+          type="url"
+          placeholder="https://yourwebsite.com"
+          autoComplete="url"
+          onFocus={() => setFocusedField('website')}
           onBlur={() => setFocusedField(null)}
-          style={{ ...inputBase, ...(focusedField === 'company' ? inputFocused : {}) }}
+          style={{ ...inputBase, ...(focusedField === 'website' ? inputFocused : {}) }}
         />
       </div>
 

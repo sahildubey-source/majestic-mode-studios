@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, company, challenge, fax } = body;
+    const { name, email, phone, company, website, challenge, fax } = body;
 
     // ── Honeypot Check ──────────────────────────────────────────
     if (fax) {
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     console.log('API Key value starts with:', process.env.RESEND_API_KEY?.substring(0, 7));
 
     // ── Validation ──────────────────────────────────────────────
-    if (!name || !email || !company || !challenge) {
+    if (!name || !email || !phone || !company || !challenge) {
       console.log('Validation failed: missing fields');
       return NextResponse.json(
         { error: 'All fields are required.' },
@@ -79,9 +79,21 @@ export async function POST(request: Request) {
               </div>
 
               <div class="field">
+                <div class="field-label">Mobile Number</div>
+                <div class="field-value"><a href="tel:${phone}">${phone}</a></div>
+              </div>
+
+              <div class="field">
                 <div class="field-label">Company</div>
                 <div class="field-value">${company}</div>
               </div>
+
+              ${website ? `
+              <div class="field">
+                <div class="field-label">Company Website</div>
+                <div class="field-value"><a href="${website}" target="_blank">${website}</a></div>
+              </div>
+              ` : ''}
 
               <hr class="divider" />
 
