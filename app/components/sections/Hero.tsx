@@ -70,7 +70,7 @@ export default function Hero() {
             marginBottom: '48px',
           }}>
             <Link href="/contact" className="btn-purple" style={{ padding: '18px 36px', fontSize: '16px', borderRadius: '16px' }}>
-              Book Your Free Strategy Call <span style={{ marginLeft: '6px' }}>↗</span>
+              Get Your Free Audit <span style={{ marginLeft: '6px' }}>↗</span>
             </Link>
             <Link href="/work" className="btn-white" style={{ padding: '18px 36px', fontSize: '16px', borderRadius: '16px' }}>
               See Our Work

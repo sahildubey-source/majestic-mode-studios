@@ -6,12 +6,11 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, company, budget, challenge, fax } = body;
+    const { name, email, company, challenge, fax } = body;
 
     // ── Honeypot Check ──────────────────────────────────────────
     if (fax) {
       console.log('Honeypot triggered! Bot detected. Ignoring request.');
-      // Return fake success so the bot thinks it worked
       return NextResponse.json({ success: true });
     }
 
@@ -21,7 +20,7 @@ export async function POST(request: Request) {
     console.log('API Key value starts with:', process.env.RESEND_API_KEY?.substring(0, 7));
 
     // ── Validation ──────────────────────────────────────────────
-    if (!name || !email || !company || !budget || !challenge) {
+    if (!name || !email || !company || !challenge) {
       console.log('Validation failed: missing fields');
       return NextResponse.json(
         { error: 'All fields are required.' },
@@ -29,15 +28,6 @@ export async function POST(request: Request) {
       );
     }
 
-    const budgetLabels: Record<string, string> = {
-      'under-2500':   'Under $2,500/mo',
-      '2500-5000':    '$2,500 – $5,000/mo',
-      '5000-10000':   '$5,000 – $10,000/mo',
-      '10000-25000':  '$10,000 – $25,000/mo',
-      '25000+':       '$25,000+/mo',
-    };
-
-    const budgetLabel = budgetLabels[budget] ?? budget;
     const notifyEmail = process.env.LEAD_NOTIFY_EMAIL ?? 'hello@majesticmodestudios.com';
     const fromEmail   = process.env.RESEND_FROM_EMAIL  ?? 'onboarding@resend.dev';
 
@@ -46,7 +36,7 @@ export async function POST(request: Request) {
       from: `Majestic Mode Studios <${fromEmail}>`,
       to:   [notifyEmail],
       replyTo: email,
-      subject: `🔥 New Lead: ${name} — ${budgetLabel}`,
+      subject: `🔥 New Lead: ${name} from ${company}`,
       html: `
         <!DOCTYPE html>
         <html>
@@ -88,11 +78,6 @@ export async function POST(request: Request) {
               <div class="field">
                 <div class="field-label">Company</div>
                 <div class="field-value">${company}</div>
-              </div>
-
-              <div class="field">
-                <div class="field-label">Monthly Marketing Budget</div>
-                <div class="field-value">${budgetLabel}</div>
               </div>
 
               <hr class="divider" />
@@ -150,7 +135,7 @@ export async function POST(request: Request) {
               <div class="steps">
                 <div class="step">
                   <div class="step-num">1</div>
-                  <div class="step-text"><strong>We review your submission</strong> — our team looks at your challenge and budget to prepare specific insights for your brand.</div>
+                  <div class="step-text"><strong>We review your submission</strong> — our team looks at your challenge to prepare specific insights for your brand.</div>
                 </div>
                 <div class="step">
                   <div class="step-num">2</div>

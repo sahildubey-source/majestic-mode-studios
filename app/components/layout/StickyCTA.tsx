@@ -40,7 +40,7 @@ export default function StickyCTA() {
               boxShadow: '0 8px 32px rgba(123, 92, 240, 0.25)',
             }}
           >
-            Book Free Strategy Call →
+            Get Free Audit →
           </Link>
         </motion.div>
       )}
@@ -75,7 +75,7 @@ export default function StickyCTA() {
               boxShadow: '0 8px 32px rgba(123, 92, 240, 0.25)',
             }}
           >
-            Book Free Strategy Call →
+            Get Free Audit →
           </Link>
         </motion.div>
       )}

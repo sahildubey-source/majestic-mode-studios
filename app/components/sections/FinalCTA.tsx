@@ -68,11 +68,20 @@ export default function FinalCTA() {
           </h2>
           <p style={{
             maxWidth: '560px',
-            margin: '0 auto 64px',
+            margin: '0 auto 40px',
             fontSize: '18px',
             color: 'var(--text-secondary)',
           }}>
             Select a time that works for you. No sales pitch. Just a 30-minute deep dive into your brand&apos;s growth opportunities.
+          </p>
+          <p style={{ fontSize: '14px', color: 'var(--text-tertiary)', marginBottom: '40px' }}>
+            Prefer to write in first?{' '}
+            <a
+              href="/contact"
+              style={{ color: 'var(--accent-primary)', fontWeight: 700, textDecoration: 'none' }}
+            >
+              Send us a message →
+            </a>
           </p>
         </motion.div>
 

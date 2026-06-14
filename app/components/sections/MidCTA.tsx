@@ -46,7 +46,7 @@ export default function MidCTA() {
 
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn-purple" style={{ padding: '18px 40px', fontSize: '16px' }}>
-              Book Your Free Call ↗
+              Start Your Free Audit ↗
             </Link>
             <Link href="/services" className="btn-white" style={{ padding: '18px 40px', fontSize: '16px' }}>
               Explore Services
@@ -54,7 +54,7 @@ export default function MidCTA() {
           </div>
 
           <p style={{ marginTop: '32px', fontSize: '14px', color: 'var(--text-tertiary)', fontWeight: 500 }}>
-             ⚡ 100% Free Strategy Session. No pressure.
+             ✦ Free 30-min strategy audit. Submitted in 60 seconds.
           </p>
         </motion.div>
       </div>

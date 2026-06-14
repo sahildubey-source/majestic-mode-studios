@@ -196,8 +196,22 @@ p {
   animation: float 5s ease-in-out infinite;
 }
 
+/* ── Contact page email link hover ── */
+.contact-email-link {
+  color: var(--text-primary);
+  transition: color 0.2s;
+}
+.contact-email-link:hover {
+  color: var(--accent-primary);
+}
+
 @media (max-width: 768px) {
   .hide-mobile { display: none !important; }
+
+  /* Contact page: stack two-column layout */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media (min-width: 769px) {
