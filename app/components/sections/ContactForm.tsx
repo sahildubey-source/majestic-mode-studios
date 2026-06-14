@@ -5,12 +5,27 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
-
+const countries = [
+  { code: '+91', flag: '🇮🇳', name: 'India' },
+  { code: '+1', flag: '🇺🇸', name: 'United States' },
+  { code: '+44', flag: '🇬🇧', name: 'United Kingdom' },
+  { code: '+1', flag: '🇨🇦', name: 'Canada' },
+  { code: '+61', flag: '🇦🇺', name: 'Australia' },
+  { code: '+971', flag: '🇦🇪', name: 'UAE' },
+  { code: '+65', flag: '🇸🇬', name: 'Singapore' },
+  { code: '+49', flag: '🇩🇪', name: 'Germany' },
+  { code: '+33', flag: '🇫🇷', name: 'France' },
+  { code: '+966', flag: '🇸🇦', name: 'Saudi Arabia' },
+  { code: '+27', flag: '🇿🇦', name: 'South Africa' },
+  { code: '+353', flag: '🇮🇪', name: 'Ireland' },
+  { code: '+64', flag: '🇳🇿', name: 'New Zealand' },
+];
 
 export default function ContactForm() {
   const [formState, setFormState] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [focusedField, setFocusedField] = useState<string | null>(null);
+  const [countryCode, setCountryCode] = useState('+91');
   const [charCount, setCharCount] = useState(0);
 
   const nameRef      = useRef<HTMLInputElement>(null);
@@ -26,10 +41,11 @@ export default function ContactForm() {
     setFormState('loading');
     setErrorMsg('');
 
+    const phoneVal = phoneRef.current?.value.trim() ?? '';
     const payload = {
       name:      nameRef.current?.value.trim()      ?? '',
       email:     emailRef.current?.value.trim()     ?? '',
-      phone:     phoneRef.current?.value.trim()     ?? '',
+      phone:     phoneVal ? `${countryCode} ${phoneVal}` : '',
       company:   companyRef.current?.value.trim()   ?? '',
       website:   websiteRef.current?.value.trim()   ?? '',
       challenge: challengeRef.current?.value.trim() ?? '',
@@ -214,17 +230,29 @@ export default function ContactForm() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
         <div style={fieldWrap}>
           <label htmlFor="cf-phone" style={labelStyle}>Mobile Number <span style={{ color: 'var(--accent-primary)' }}>*</span></label>
-          <input
-            id="cf-phone"
-            ref={phoneRef}
-            type="tel"
-            placeholder="+91 98765 43210"
-            autoComplete="tel"
-            required
-            onFocus={() => setFocusedField('phone')}
-            onBlur={() => setFocusedField(null)}
-            style={{ ...inputBase, ...(focusedField === 'phone' ? inputFocused : {}) }}
-          />
+          <div className="phone-group">
+            <select
+              value={countryCode}
+              onChange={(e) => setCountryCode(e.target.value)}
+              className="phone-select"
+              aria-label="Country Code"
+            >
+              {countries.map((c, idx) => (
+                <option key={idx} value={c.code}>
+                  {c.flag} {c.code}
+                </option>
+              ))}
+            </select>
+            <input
+              id="cf-phone"
+              ref={phoneRef}
+              type="tel"
+              placeholder="98765 43210"
+              autoComplete="tel"
+              required
+              className="phone-input"
+            />
+          </div>
         </div>
         <div style={fieldWrap}>
           <label htmlFor="cf-company" style={labelStyle}>Company / Brand <span style={{ color: 'var(--accent-primary)' }}>*</span></label>
@@ -381,6 +409,48 @@ export default function ContactForm() {
       <style>{`
         @keyframes spin {
           to { transform: rotate(360deg); }
+        }
+        .phone-group {
+          display: flex;
+          align-items: stretch;
+          border-radius: 12px;
+          border: 1.5px solid var(--border-light);
+          background: rgba(123,92,240,0.03);
+          transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+        }
+        .phone-group:focus-within {
+          border-color: var(--accent-primary);
+          box-shadow: 0 0 0 3px rgba(123,92,240,0.12);
+          background: #fff;
+        }
+        .phone-select {
+          border: none;
+          background: transparent;
+          color: var(--text-primary);
+          padding: 14px 12px 14px 16px;
+          font-size: 15px;
+          font-family: inherit;
+          outline: none;
+          cursor: pointer;
+          border-right: 1.5px solid var(--border-light);
+          border-top-left-radius: 10.5px;
+          border-bottom-left-radius: 10.5px;
+        }
+        .phone-select option {
+          background-color: var(--bg-card);
+          color: var(--text-primary);
+        }
+        .phone-input {
+          border: none;
+          background: transparent;
+          color: var(--text-primary);
+          padding: 14px 18px;
+          font-size: 15px;
+          font-family: inherit;
+          outline: none;
+          width: 100%;
+          border-top-right-radius: 10.5px;
+          border-bottom-right-radius: 10.5px;
         }
       `}</style>
     </motion.form>
