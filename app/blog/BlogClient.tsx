@@ -4,91 +4,18 @@ import Link from 'next/link';
 import { ArrowUpRight, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const posts = [
-  {
-    slug: 'google-ads-10x-roas',
-    tag: 'Paid Media',
-    title: 'How to Get 10x ROAS with Google Ads in 2025',
-    excerpt: "Most businesses are happy with 3-4x ROAS. We show you the exact account structure, landing page elements, and keyword strategy we use to hit 8-12x.",
-    readTime: '9 min read',
-    date: 'May 15, 2025',
-    color: 'var(--accent-primary)',
-  },
-  {
-    slug: 'marketing-funnel-ecommerce',
-    tag: 'Strategy',
-    title: 'How to Build a Marketing Funnel for eCommerce in 2025',
-    excerpt: "Every rupee spent on ads without a proper funnel is wasted. Learn how to structure awareness, consideration, and conversion campaigns for peak ROI.",
-    readTime: '8 min read',
-    date: 'May 15, 2025',
-    color: 'var(--accent-peach)',
-  },
-  {
-    slug: 'instagram-reels-strategy-2025',
-    tag: 'Social Media',
-    title: 'Instagram Reels Strategy for Brands in 2025',
-    excerpt: "Instagram Reels is the single highest-reach organic format. Master the scroll-stopping hook formula and a 3-pillar content system to scale for free.",
-    readTime: '7 min read',
-    date: 'May 15, 2025',
-    color: 'var(--accent-peach)',
-  },
-  {
-    slug: 'ai-video-ads-2025',
-    tag: 'AI & Creative',
-    title: 'How AI Video Ads Outperform Traditional Ads in 2025',
-    excerpt: "The data is in: AI-generated video creatives are consistently outperforming manually produced ads across Meta, TikTok, and YouTube. Here's why, and how to harness it.",
-    readTime: '7 min read',
-    date: 'May 8, 2025',
-    color: 'var(--accent-primary)',
-  },
-  {
-    slug: 'social-media-ecommerce-2025',
-    tag: 'Social Media',
-    title: 'Best Social Media Marketing Strategies for eCommerce Brands in 2025',
-    excerpt: 'Organic social is harder than ever — but the brands winning have cracked the code. We break down the exact content systems driving 180%+ revenue growth for DTC brands.',
-    readTime: '9 min read',
-    date: 'May 3, 2025',
-    color: 'var(--accent-peach)',
-  },
-  {
-    slug: 'google-ads-failing',
-    tag: 'Paid Media',
-    title: 'Why Your Google Ads Are Failing (And How to Fix Them)',
-    excerpt: "After auditing 40+ Google Ads accounts, we've identified the 8 mistakes that kill ROI for most businesses. Avoid these and your results will transform.",
-    readTime: '6 min read',
-    date: 'April 28, 2025',
-    color: 'var(--accent-primary)',
-  },
-  {
-    slug: 'seo-compound-growth',
-    tag: 'SEO',
-    title: 'Why SEO is the Highest-ROI Marketing Channel (With Data)',
-    excerpt: "We analyzed 18 months of data across our client accounts. SEO consistently delivers 4-8x higher lifetime ROI than paid ads — here's the breakdown.",
-    readTime: '8 min read',
-    date: 'April 21, 2025',
-    color: '#FFB800',
-  },
-  {
-    slug: 'automation-marketing-agency',
-    tag: 'Automation',
-    title: '10 Marketing Automation Workflows Every Agency Should Have',
-    excerpt: "The agencies growing fastest in 2025 aren't working harder — they're automated smarter. Here are the 10 workflows saving our team 25+ hours per week.",
-    readTime: '5 min read',
-    date: 'April 15, 2025',
-    color: 'var(--accent-primary)',
-  },
-  {
-    slug: 'landing-page-conversion-rate',
-    tag: 'CRO',
-    title: "The 9 Landing Page Elements That Doubled Our Clients' Conversion Rates",
-    excerpt: 'We A/B tested over 200 landing page variants. These 9 elements consistently moved conversion rates from 1-2% to 5-8%. Every single time.',
-    readTime: '10 min read',
-    date: 'April 9, 2025',
-    color: 'var(--accent-peach)',
-  },
-];
+type Post = {
+  _id: string;
+  slug: string;
+  tag: string;
+  title: string;
+  excerpt: string;
+  readTime: string;
+  publishedAt: string;
+  color?: string;
+};
 
-export default function BlogClient() {
+export default function BlogClient({ posts }: { posts: Post[] }) {
   return (
     <>
       <section style={{ paddingTop: '180px', paddingBottom: '100px', background: 'transparent' }}>
@@ -119,51 +46,67 @@ export default function BlogClient() {
 
       <section className="section-pad" style={{ background: 'transparent' }}>
         <div className="container-main">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '32px' }}>
-            {posts.map((post, i) => (
-              <motion.div
-                key={post.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-              >
-                <Link href={`/blog/${post.slug}`} style={{ display: 'block', textDecoration: 'none', height: '100%' }}>
-                  <div className="card-white" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
-                      <span style={{
-                        fontSize: '11px', fontWeight: 800, letterSpacing: '0.1em',
-                        textTransform: 'uppercase', color: post.color, padding: '6px 12px',
-                        background: 'var(--bg-base)', borderRadius: '100px',
-                      }}>{post.tag}</span>
-                      <div style={{ color: 'var(--accent-primary)', opacity: 0.4 }}>
-                        <ArrowUpRight size={18} />
-                      </div>
-                    </div>
+          {posts.length === 0 ? (
+            <p style={{ textAlign: 'center', color: 'var(--text-tertiary)', fontSize: '16px' }}>
+              No posts published yet. Check back soon.
+            </p>
+          ) : (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '32px' }}>
+              {posts.map((post, i) => {
+                const tagColor = post.color || 'var(--accent-primary)';
+                const dateString = post.publishedAt
+                  ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+                  : '';
+                return (
+                  <motion.div
+                    key={post._id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                  >
+                    <Link href={`/blog/${post.slug}`} style={{ display: 'block', textDecoration: 'none', height: '100%' }}>
+                      <div className="card-white" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
+                          <span style={{
+                            fontSize: '11px', fontWeight: 800, letterSpacing: '0.1em',
+                            textTransform: 'uppercase', color: tagColor, padding: '6px 12px',
+                            background: 'var(--bg-base)', borderRadius: '100px',
+                          }}>{post.tag}</span>
+                          <div style={{ color: 'var(--accent-primary)', opacity: 0.4 }}>
+                            <ArrowUpRight size={18} />
+                          </div>
+                        </div>
 
-                    <h3 style={{ fontSize: '22px', lineHeight: 1.3, marginBottom: '16px', color: 'var(--text-primary)' }}>{post.title}</h3>
-                    <p style={{ fontSize: '15px', lineHeight: 1.7, color: 'var(--text-secondary)', marginBottom: '32px', flex: 1 }}>{post.excerpt}</p>
-                    
-                    <div style={{ 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      gap: '16px', 
-                      fontSize: '12px', 
-                      color: 'var(--text-tertiary)', 
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.05em',
-                      paddingTop: '24px',
-                      borderTop: '1px solid var(--border-light)'
-                    }}>
-                      <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Clock size={14} /> {post.readTime}</span>
-                      <span>{post.date}</span>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
+                        <h3 style={{ fontSize: '22px', lineHeight: 1.3, marginBottom: '16px', color: 'var(--text-primary)' }}>{post.title}</h3>
+                        <p style={{ fontSize: '15px', lineHeight: 1.7, color: 'var(--text-secondary)', marginBottom: '32px', flex: 1 }}>{post.excerpt}</p>
+                        
+                        <div style={{ 
+                          display: 'flex', 
+                          alignItems: 'center', 
+                          gap: '16px', 
+                          fontSize: '12px', 
+                          color: 'var(--text-tertiary)', 
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          paddingTop: '24px',
+                          borderTop: '1px solid var(--border-light)'
+                        }}>
+                          {post.readTime && (
+                            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                              <Clock size={14} /> {post.readTime}
+                            </span>
+                          )}
+                          {dateString && <span>{dateString}</span>}
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </section>
 
